@@ -1,10 +1,1 @@
-function add(int a, int b) {
-    return a + b;
-}
-
-function main() {
-    int a = 5;
-    int b = 12;
-    int c = add(a, b);
-    return c;
-}
+1*2*3*4*5+6*(1+1)+((1+1)-(2+2))

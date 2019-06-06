@@ -1,87 +1,131 @@
 grammar Code;
 
-program : functionDefinition*;
-
-functionDefinition : FUNCTION Identifier LPAREN params RPAREN LBRACE functionBody RBRACE;
-
-functionBody: (statement | expr)*;
-
-expr: add value
-    | expr mult expr
-    | expr add expr
-    | value
-    ;
-value: Identifier
-     | NUMBER
-     | '(' expr ')'
-     ;
-add: '+' | '-';
-mult: '*' | '/';
+file : expression;
 
 
+expression
+   :  expression  POW expression
+   |  expression  (TIMES | DIV)  expression
+   |  expression  (PLUS | MINUS) expression
+   |  LPAREN expression RPAREN
+   |  (PLUS | MINUS)* atom
+   ;
+
+atom
+   : scientific
+   | variable
+   ;
+
+scientific
+   : SCIENTIFIC_NUMBER
+   ;
+
+variable
+   : VARIABLE
+   ;
+
+relop
+   : EQ
+   | GT
+   | LT
+   ;
 
 
-statement
-    : functionCall
-    ;
-
-arguments
-    :   ( argument ( COMMA argument )* )?
-    ;
-
-argument
-    :   Identifier | NUMBER
-    ;
-
-params
-    :   ( param ( COMMA param )* )?
-    ;
-
-param
-    :   INT Identifier
-    ;
-
-functionCall: Identifier LPAREN arguments RPAREN SEMI;
+VARIABLE
+   : VALID_ID_START VALID_ID_CHAR*
+   ;
 
 
-NUMBER: [0-9]+;
-
-FUNCTION : 'function';
-INT : 'int';
-
-LPAREN : '(';
-RPAREN : ')';
-LBRACE : '{';
-RBRACE : '}';
-SEMI : ';';
-COMMA : ',';
-
-ADD : '+';
-SUB : '-';
-MUL : '*';
-DIV : '/';
-
-OPERATION:
-    ADD | SUB | MUL | DIV;
+fragment VALID_ID_START
+   : ('a' .. 'z') | ('A' .. 'Z') | '_'
+   ;
 
 
-Identifier
-	:	Letter LetterOrDigit*
-	;
+fragment VALID_ID_CHAR
+   : VALID_ID_START | ('0' .. '9')
+   ;
 
-fragment
-Letter
-	:	[a-zA-Z$_]
-	;
 
-fragment
-LetterOrDigit
-	:	[a-zA-Z0-9$_]
-		{Character.isJavaIdentifierPart(Character.toCodePoint((char)_input.LA(-2), (char)_input.LA(-1)))}?
-	;
+SCIENTIFIC_NUMBER
+   : NUMBER (E SIGN? NUMBER)?
+   ;
 
-WS  :  [ \t\r\n\u000C]+ -> skip
-    ;
+//The integer part gets its potential sign from the signedAtom rule
+
+fragment NUMBER
+   : ('0' .. '9') + ('.' ('0' .. '9') +)?
+   ;
+
+
+fragment E
+   : 'E' | 'e'
+   ;
+
+
+fragment SIGN
+   : ('+' | '-')
+   ;
+
+
+LPAREN
+   : '('
+   ;
+
+
+RPAREN
+   : ')'
+   ;
+
+
+PLUS
+   : '+'
+   ;
+
+
+MINUS
+   : '-'
+   ;
+
+
+TIMES
+   : '*'
+   ;
+
+
+DIV
+   : '/'
+   ;
+
+
+GT
+   : '>'
+   ;
+
+
+LT
+   : '<'
+   ;
+
+
+EQ
+   : '='
+   ;
+
+
+POINT
+   : '.'
+   ;
+
+
+POW
+   : '^'
+   ;
+
+
+WS
+   : [ \r\n\t] + -> skip
+   ;
+
 
 COMMENT
     :   '/*' .*? '*/' -> skip
