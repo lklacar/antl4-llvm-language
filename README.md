@@ -1,4 +1,4 @@
-### Example LLVM/antlr4 Language
+# Example LLVM/antlr4 Language
 
 - Written mostly in python
 - Lexer and parser written using antlr4
@@ -25,3 +25,8 @@ sudo pip3 install -r requirements.txt
 ```
 This will run the compiler and emit an object file, then link it to the bootstrap main.c using gcc and run the executable.
 Edit ./test/example.code to test another expressions.
+
+## Inspecting
+```bash
+objdump -d ./out/evaluate.o
+```

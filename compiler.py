@@ -36,8 +36,10 @@ def main(argv):
 
     module = listener.get_llvm_module()
 
-    # print(module)
     generate_object_file(module)
+
+    print("LLVM IR Code: ")
+    print(module)
 
 
 if __name__ == '__main__':
