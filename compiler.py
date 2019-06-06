@@ -17,7 +17,7 @@ def main(argv):
     walker = ParseTreeWalker()
     walker.walk(listener, tree)
 
-    print(tree)
+    print(listener.get_llvm_module())
 
 if __name__ == '__main__':
     main(sys.argv)

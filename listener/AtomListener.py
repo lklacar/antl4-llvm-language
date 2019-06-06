@@ -10,4 +10,4 @@ class AtomListener(CodeListener):
     def enterAtom(self, ctx: CodeParser.AtomContext):
         for child in ctx.children:
             if isinstance(child, CodeParser.ScientificContext):
-                self.scientific_listener.enterScientific(child)
+                return self.scientific_listener.enterScientific(child)
