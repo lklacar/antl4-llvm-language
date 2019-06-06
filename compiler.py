@@ -15,7 +15,7 @@ def generate_object_file(module):
     context = llvm.create_context()
 
     target = llvm.Target.from_default_triple()
-    target_machine = target.create_target_machine()
+    target_machine = target.create_target_machine(opt=0)
 
     module_ref = llvm.parse_assembly(str(module))
 
