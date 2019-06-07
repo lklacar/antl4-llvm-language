@@ -9,7 +9,7 @@ import sys
 def serializedATN():
     with StringIO() as buf:
         buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\26")
-        buf.write("\u0085\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\u0084\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\3\2\7\2\"\n\2\f\2\16\2%\13\2")
         buf.write("\3\3\3\3\3\3\3\3\3\3\3\4\3\4\3\4\3\4\3\4\3\4\3\5\3\5\3")
@@ -18,38 +18,38 @@ def serializedATN():
         buf.write("\3\t\3\n\3\n\3\n\3\n\3\n\3\13\3\13\3\13\3\13\3\13\3\13")
         buf.write("\7\13X\n\13\f\13\16\13[\13\13\3\13\3\13\5\13_\n\13\3\13")
         buf.write("\3\13\3\13\3\13\3\13\3\13\3\13\3\13\3\13\7\13j\n\13\f")
-        buf.write("\13\16\13m\13\13\3\f\3\f\3\f\3\r\5\rs\n\r\3\r\3\r\7\r")
-        buf.write("w\n\r\f\r\16\rz\13\r\3\16\3\16\3\16\3\16\3\16\3\17\3\17")
-        buf.write("\3\20\3\20\3\20\2\3\24\21\2\4\6\b\n\f\16\20\22\24\26\30")
-        buf.write("\32\34\36\2\6\3\2\n\13\3\2\b\t\4\2\7\7\22\23\3\2\5\6\2")
-        buf.write("\u0083\2#\3\2\2\2\4&\3\2\2\2\6+\3\2\2\2\b\61\3\2\2\2\n")
-        buf.write("\65\3\2\2\2\fB\3\2\2\2\16G\3\2\2\2\20I\3\2\2\2\22L\3\2")
-        buf.write("\2\2\24^\3\2\2\2\26n\3\2\2\2\30r\3\2\2\2\32{\3\2\2\2\34")
-        buf.write("\u0080\3\2\2\2\36\u0082\3\2\2\2 \"\5\4\3\2! \3\2\2\2\"")
-        buf.write("%\3\2\2\2#!\3\2\2\2#$\3\2\2\2$\3\3\2\2\2%#\3\2\2\2&\'")
-        buf.write("\5\6\4\2\'(\7\20\2\2()\5\f\7\2)*\7\21\2\2*\5\3\2\2\2+")
-        buf.write(",\5\36\20\2,-\7\7\2\2-.\7\f\2\2./\5\n\6\2/\60\7\r\2\2")
-        buf.write("\60\7\3\2\2\2\61\62\5\36\20\2\62\63\7\7\2\2\63\t\3\2\2")
-        buf.write("\2\64\66\5\b\5\2\65\64\3\2\2\2\65\66\3\2\2\2\66;\3\2\2")
-        buf.write("\2\678\7\3\2\28:\5\b\5\29\67\3\2\2\2:=\3\2\2\2;9\3\2\2")
-        buf.write("\2;<\3\2\2\2<\13\3\2\2\2=;\3\2\2\2>A\5\16\b\2?A\5\24\13")
-        buf.write("\2@>\3\2\2\2@?\3\2\2\2AD\3\2\2\2B@\3\2\2\2BC\3\2\2\2C")
-        buf.write("\r\3\2\2\2DB\3\2\2\2EH\5\22\n\2FH\5\20\t\2GE\3\2\2\2G")
-        buf.write("F\3\2\2\2H\17\3\2\2\2IJ\7\4\2\2JK\5\24\13\2K\21\3\2\2")
-        buf.write("\2LM\5\36\20\2MN\7\7\2\2NO\7\17\2\2OP\5\24\13\2P\23\3")
-        buf.write("\2\2\2QR\b\13\1\2RS\7\f\2\2ST\5\24\13\2TU\7\r\2\2U_\3")
-        buf.write("\2\2\2VX\t\2\2\2WV\3\2\2\2X[\3\2\2\2YW\3\2\2\2YZ\3\2\2")
-        buf.write("\2Z\\\3\2\2\2[Y\3\2\2\2\\_\5\34\17\2]_\5\32\16\2^Q\3\2")
-        buf.write("\2\2^Y\3\2\2\2^]\3\2\2\2_k\3\2\2\2`a\f\b\2\2ab\7\16\2")
-        buf.write("\2bj\5\24\13\tcd\f\7\2\2de\t\3\2\2ej\5\24\13\bfg\f\6\2")
-        buf.write("\2gh\t\2\2\2hj\5\24\13\7i`\3\2\2\2ic\3\2\2\2if\3\2\2\2")
-        buf.write("jm\3\2\2\2ki\3\2\2\2kl\3\2\2\2l\25\3\2\2\2mk\3\2\2\2n")
-        buf.write("o\5\36\20\2op\7\7\2\2p\27\3\2\2\2qs\5\26\f\2rq\3\2\2\2")
-        buf.write("rs\3\2\2\2sx\3\2\2\2tu\7\3\2\2uw\5\26\f\2vt\3\2\2\2wz")
-        buf.write("\3\2\2\2xv\3\2\2\2xy\3\2\2\2y\31\3\2\2\2zx\3\2\2\2{|\7")
-        buf.write("\7\2\2|}\7\20\2\2}~\5\30\r\2~\177\7\21\2\2\177\33\3\2")
-        buf.write("\2\2\u0080\u0081\t\4\2\2\u0081\35\3\2\2\2\u0082\u0083")
-        buf.write("\t\5\2\2\u0083\37\3\2\2\2\16#\65;@BGY^ikrx")
+        buf.write("\13\16\13m\13\13\3\f\3\f\3\r\5\rr\n\r\3\r\3\r\7\rv\n\r")
+        buf.write("\f\r\16\ry\13\r\3\16\3\16\3\16\3\16\3\16\3\17\3\17\3\20")
+        buf.write("\3\20\3\20\2\3\24\21\2\4\6\b\n\f\16\20\22\24\26\30\32")
+        buf.write("\34\36\2\6\3\2\n\13\3\2\b\t\4\2\7\7\22\23\3\2\5\6\2\u0082")
+        buf.write("\2#\3\2\2\2\4&\3\2\2\2\6+\3\2\2\2\b\61\3\2\2\2\n\65\3")
+        buf.write("\2\2\2\fB\3\2\2\2\16G\3\2\2\2\20I\3\2\2\2\22L\3\2\2\2")
+        buf.write("\24^\3\2\2\2\26n\3\2\2\2\30q\3\2\2\2\32z\3\2\2\2\34\177")
+        buf.write("\3\2\2\2\36\u0081\3\2\2\2 \"\5\4\3\2! \3\2\2\2\"%\3\2")
+        buf.write("\2\2#!\3\2\2\2#$\3\2\2\2$\3\3\2\2\2%#\3\2\2\2&\'\5\6\4")
+        buf.write("\2\'(\7\20\2\2()\5\f\7\2)*\7\21\2\2*\5\3\2\2\2+,\5\36")
+        buf.write("\20\2,-\7\7\2\2-.\7\f\2\2./\5\n\6\2/\60\7\r\2\2\60\7\3")
+        buf.write("\2\2\2\61\62\5\36\20\2\62\63\7\7\2\2\63\t\3\2\2\2\64\66")
+        buf.write("\5\b\5\2\65\64\3\2\2\2\65\66\3\2\2\2\66;\3\2\2\2\678\7")
+        buf.write("\3\2\28:\5\b\5\29\67\3\2\2\2:=\3\2\2\2;9\3\2\2\2;<\3\2")
+        buf.write("\2\2<\13\3\2\2\2=;\3\2\2\2>A\5\16\b\2?A\5\24\13\2@>\3")
+        buf.write("\2\2\2@?\3\2\2\2AD\3\2\2\2B@\3\2\2\2BC\3\2\2\2C\r\3\2")
+        buf.write("\2\2DB\3\2\2\2EH\5\22\n\2FH\5\20\t\2GE\3\2\2\2GF\3\2\2")
+        buf.write("\2H\17\3\2\2\2IJ\7\4\2\2JK\5\24\13\2K\21\3\2\2\2LM\5\36")
+        buf.write("\20\2MN\7\7\2\2NO\7\17\2\2OP\5\24\13\2P\23\3\2\2\2QR\b")
+        buf.write("\13\1\2RS\7\f\2\2ST\5\24\13\2TU\7\r\2\2U_\3\2\2\2VX\t")
+        buf.write("\2\2\2WV\3\2\2\2X[\3\2\2\2YW\3\2\2\2YZ\3\2\2\2Z\\\3\2")
+        buf.write("\2\2[Y\3\2\2\2\\_\5\34\17\2]_\5\32\16\2^Q\3\2\2\2^Y\3")
+        buf.write("\2\2\2^]\3\2\2\2_k\3\2\2\2`a\f\b\2\2ab\7\16\2\2bj\5\24")
+        buf.write("\13\tcd\f\7\2\2de\t\3\2\2ej\5\24\13\bfg\f\6\2\2gh\t\2")
+        buf.write("\2\2hj\5\24\13\7i`\3\2\2\2ic\3\2\2\2if\3\2\2\2jm\3\2\2")
+        buf.write("\2ki\3\2\2\2kl\3\2\2\2l\25\3\2\2\2mk\3\2\2\2no\5\24\13")
+        buf.write("\2o\27\3\2\2\2pr\5\26\f\2qp\3\2\2\2qr\3\2\2\2rw\3\2\2")
+        buf.write("\2st\7\3\2\2tv\5\26\f\2us\3\2\2\2vy\3\2\2\2wu\3\2\2\2")
+        buf.write("wx\3\2\2\2x\31\3\2\2\2yw\3\2\2\2z{\7\7\2\2{|\7\f\2\2|")
+        buf.write("}\5\30\r\2}~\7\r\2\2~\33\3\2\2\2\177\u0080\t\4\2\2\u0080")
+        buf.write("\35\3\2\2\2\u0081\u0082\t\5\2\2\u0082\37\3\2\2\2\16#\65")
+        buf.write(";@BGY^ikqw")
         return buf.getvalue()
 
 
@@ -72,7 +72,7 @@ class CodeParser ( Parser ):
                       "LPAREN", "RPAREN", "POW", "EQ", "LBRACE", "RBRACE", 
                       "INT", "DECIMAL", "WS", "COMMENT", "LINE_COMMENT" ]
 
-    RULE_file = 0
+    RULE_program = 0
     RULE_function = 1
     RULE_functionHead = 2
     RULE_arg = 3
@@ -88,7 +88,7 @@ class CodeParser ( Parser ):
     RULE_atom = 13
     RULE_type = 14
 
-    ruleNames =  [ "file", "function", "functionHead", "arg", "arguments", 
+    ruleNames =  [ "program", "function", "functionHead", "arg", "arguments", 
                    "functionBody", "statement", "returnStatement", "assignmentStatement", 
                    "expression", "param", "params", "functionCall", "atom", 
                    "type" ]
@@ -124,7 +124,7 @@ class CodeParser ( Parser ):
 
 
 
-    class FileContext(ParserRuleContext):
+    class ProgramContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -138,23 +138,21 @@ class CodeParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return CodeParser.RULE_file
+            return CodeParser.RULE_program
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterFile" ):
-                listener.enterFile(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitFile" ):
-                listener.exitFile(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitProgram" ):
+                return visitor.visitProgram(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
 
-    def file(self):
+    def program(self):
 
-        localctx = CodeParser.FileContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 0, self.RULE_file)
+        localctx = CodeParser.ProgramContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 0, self.RULE_program)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
@@ -200,13 +198,11 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_function
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterFunction" ):
-                listener.enterFunction(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitFunction" ):
-                listener.exitFunction(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunction" ):
+                return visitor.visitFunction(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -260,13 +256,11 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_functionHead
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterFunctionHead" ):
-                listener.enterFunctionHead(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitFunctionHead" ):
-                listener.exitFunctionHead(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunctionHead" ):
+                return visitor.visitFunctionHead(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -312,13 +306,11 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_arg
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterArg" ):
-                listener.enterArg(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitArg" ):
-                listener.exitArg(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitArg" ):
+                return visitor.visitArg(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -358,13 +350,11 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_arguments
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterArguments" ):
-                listener.enterArguments(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitArguments" ):
-                listener.exitArguments(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitArguments" ):
+                return visitor.visitArguments(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -428,13 +418,11 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_functionBody
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterFunctionBody" ):
-                listener.enterFunctionBody(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitFunctionBody" ):
-                listener.exitFunctionBody(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunctionBody" ):
+                return visitor.visitFunctionBody(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -494,13 +482,11 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_statement
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterStatement" ):
-                listener.enterStatement(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitStatement" ):
-                listener.exitStatement(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStatement" ):
+                return visitor.visitStatement(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -548,13 +534,11 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_returnStatement
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterReturnStatement" ):
-                listener.enterReturnStatement(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitReturnStatement" ):
-                listener.exitReturnStatement(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitReturnStatement" ):
+                return visitor.visitReturnStatement(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -601,13 +585,11 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_assignmentStatement
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterAssignmentStatement" ):
-                listener.enterAssignmentStatement(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitAssignmentStatement" ):
-                listener.exitAssignmentStatement(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssignmentStatement" ):
+                return visitor.visitAssignmentStatement(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -686,13 +668,11 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_expression
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterExpression" ):
-                listener.enterExpression(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitExpression" ):
-                listener.exitExpression(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpression" ):
+                return visitor.visitExpression(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -825,23 +805,18 @@ class CodeParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def type(self):
-            return self.getTypedRuleContext(CodeParser.TypeContext,0)
+        def expression(self):
+            return self.getTypedRuleContext(CodeParser.ExpressionContext,0)
 
-
-        def ID(self):
-            return self.getToken(CodeParser.ID, 0)
 
         def getRuleIndex(self):
             return CodeParser.RULE_param
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterParam" ):
-                listener.enterParam(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitParam" ):
-                listener.exitParam(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitParam" ):
+                return visitor.visitParam(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -853,9 +828,7 @@ class CodeParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 108
-            self.type()
-            self.state = 109
-            self.match(CodeParser.ID)
+            self.expression(0)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -881,13 +854,11 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_params
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterParams" ):
-                listener.enterParams(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitParams" ):
-                listener.exitParams(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitParams" ):
+                return visitor.visitParams(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -899,23 +870,23 @@ class CodeParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 112
+            self.state = 111
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==CodeParser.T__2 or _la==CodeParser.T__3:
-                self.state = 111
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CodeParser.ID) | (1 << CodeParser.PLUS) | (1 << CodeParser.MINUS) | (1 << CodeParser.LPAREN) | (1 << CodeParser.INT) | (1 << CodeParser.DECIMAL))) != 0):
+                self.state = 110
                 self.param()
 
 
-            self.state = 118
+            self.state = 117
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==CodeParser.T__0:
-                self.state = 114
+                self.state = 113
                 self.match(CodeParser.T__0)
-                self.state = 115
+                self.state = 114
                 self.param()
-                self.state = 120
+                self.state = 119
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -937,26 +908,24 @@ class CodeParser ( Parser ):
         def ID(self):
             return self.getToken(CodeParser.ID, 0)
 
-        def LBRACE(self):
-            return self.getToken(CodeParser.LBRACE, 0)
+        def LPAREN(self):
+            return self.getToken(CodeParser.LPAREN, 0)
 
         def params(self):
             return self.getTypedRuleContext(CodeParser.ParamsContext,0)
 
 
-        def RBRACE(self):
-            return self.getToken(CodeParser.RBRACE, 0)
+        def RPAREN(self):
+            return self.getToken(CodeParser.RPAREN, 0)
 
         def getRuleIndex(self):
             return CodeParser.RULE_functionCall
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterFunctionCall" ):
-                listener.enterFunctionCall(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitFunctionCall" ):
-                listener.exitFunctionCall(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunctionCall" ):
+                return visitor.visitFunctionCall(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -967,14 +936,14 @@ class CodeParser ( Parser ):
         self.enterRule(localctx, 24, self.RULE_functionCall)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 121
+            self.state = 120
             self.match(CodeParser.ID)
+            self.state = 121
+            self.match(CodeParser.LPAREN)
             self.state = 122
-            self.match(CodeParser.LBRACE)
-            self.state = 123
             self.params()
-            self.state = 124
-            self.match(CodeParser.RBRACE)
+            self.state = 123
+            self.match(CodeParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1002,13 +971,11 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_atom
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterAtom" ):
-                listener.enterAtom(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitAtom" ):
-                listener.exitAtom(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAtom" ):
+                return visitor.visitAtom(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1020,7 +987,7 @@ class CodeParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 126
+            self.state = 125
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CodeParser.ID) | (1 << CodeParser.INT) | (1 << CodeParser.DECIMAL))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1046,13 +1013,11 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_type
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterType" ):
-                listener.enterType(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitType" ):
-                listener.exitType(self)
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitType" ):
+                return visitor.visitType(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1064,7 +1029,7 @@ class CodeParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 128
+            self.state = 127
             _la = self._input.LA(1)
             if not(_la==CodeParser.T__2 or _la==CodeParser.T__3):
                 self._errHandler.recoverInline(self)

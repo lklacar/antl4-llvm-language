@@ -3,8 +3,9 @@ from antlr4 import *
 
 from generated.CodeLexer import CodeLexer
 from generated.CodeParser import CodeParser
-from listener.FileListener import FileListener
 import llvmlite.binding as llvm
+
+from listener.ProgramVisitor import ProgramVisitor
 
 
 def generate_object_file(module):
@@ -26,20 +27,17 @@ def generate_object_file(module):
 def main(argv):
     input_stream = FileStream("./test/example.code")
     lexer = CodeLexer(input_stream)
-    stream = CommonTokenStream(lexer)
-    parser = CodeParser(stream)
-    tree = parser.file()
+    tokens = CommonTokenStream(lexer)
+    parser = CodeParser(tokens)
 
-    listener = FileListener()
-    walker = ParseTreeWalker()
-    walker.walk(listener, tree)
+    program_visitor = ProgramVisitor()
+    parser.program().accept(program_visitor)
 
-    module = listener.get_llvm_module()
 
-    generate_object_file(module)
+    #generate_object_file(module)
 
-    print("LLVM IR Code: ")
-    print(module)
+    #print("LLVM IR Code: ")
+    #print(module)
 
 
 if __name__ == '__main__':
