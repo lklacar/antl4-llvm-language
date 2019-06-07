@@ -4,23 +4,19 @@ from generated.CodeListener import CodeListener
 from generated.CodeParser import CodeParser
 from llvmlite import ir
 
-from new.ExpressionListener import ExpressionListener
+from new.FunctionContext import FunctionContext
 from new.StatemetListener import StatementListener
 
 
 class FunctionBodyListener(CodeListener):
-    def __init__(self, function):
+    def __init__(self, function: ir.Function, context: FunctionContext):
         self.function = function
+        self.context = context
         block = self.function.append_basic_block(name="entry")
         self.builder = ir.IRBuilder(block)
 
     def enterFunctionBody(self, ctx: CodeParser.FunctionBodyContext):
         for child in ctx.children:
-            if isinstance(child, CodeParser.ExpressionContext):
-                listener = ExpressionListener(self.builder)
-                walker = ParseTreeWalker()
-                walker.walk(listener, child)
-            elif isinstance(child, CodeParser.StatementContext):
-                listener = StatementListener(self.builder)
-                walker = ParseTreeWalker()
-                walker.walk(listener, child)
+            listener = StatementListener(self.builder, self.context)
+            walker = ParseTreeWalker()
+            walker.walk(listener, child)

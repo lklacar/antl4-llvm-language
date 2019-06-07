@@ -9,7 +9,7 @@ functionHead: type ID LPAREN arguments RPAREN;
 arg: type ID;
 arguments: arg? (',' arg)*;
 
-functionBody: (statement | expression)*;
+functionBody: (statement)*;
 
 statement
     : assignmentStatement

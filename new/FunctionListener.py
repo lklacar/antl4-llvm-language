@@ -5,6 +5,7 @@ from generated.CodeParser import CodeParser
 from llvmlite import ir
 
 from new.FunctionBodyListener import FunctionBodyListener
+from new.FunctionContext import FunctionContext
 from new.type_mapper import map_type
 
 
@@ -13,6 +14,7 @@ class FunctionListener(CodeListener):
     def __init__(self, module):
         self.module = module
         self.function = None
+        self.context = FunctionContext()
 
     def enterFunctionHead(self, ctx: CodeParser.FunctionHeadContext):
         return_type = map_type(ctx.type())
@@ -22,7 +24,7 @@ class FunctionListener(CodeListener):
         self.function = ir.Function(self.module, function_type, function_name)
 
     def enterFunctionBody(self, ctx: CodeParser.FunctionBodyContext):
-        listener = FunctionBodyListener(self.function)
+        listener = FunctionBodyListener(self.function, self.context)
 
         walker = ParseTreeWalker()
         walker.walk(listener, ctx)

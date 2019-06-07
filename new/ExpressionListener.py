@@ -7,7 +7,8 @@ from llvmlite import ir
 class ExpressionListener(CodeListener):
     stack = []
 
-    def __init__(self, builder: ir.IRBuilder):
+    def __init__(self, builder: ir.IRBuilder, context):
+        self.context = context
         self.builder = builder
 
     def exitExpressionAdd(self, ctx: CodeParser.ExpressionAddContext):
@@ -35,6 +36,9 @@ class ExpressionListener(CodeListener):
             res = ir.Constant(ir.IntType(32), int(val))
         elif t == CodeLexer.DECIMAL:
             res = ir.Constant(ir.DoubleType(), float(val))
+        elif t == CodeParser.ID:
+            pointer = self.context.get_variable(val)
+            res = self.builder.load(pointer, val)
         else:
             raise Exception("Cannot convert type {0} to machine LLVM".format(str(t)))
 
