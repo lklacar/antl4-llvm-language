@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-extern int evaluate();
+extern int start();
 
 int main() {
-    printf("%d", evaluate());
+    printf("%d", start());
 }
