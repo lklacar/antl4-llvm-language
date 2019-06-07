@@ -1,125 +1,69 @@
 grammar Code;
 
-file : expression;
+program: function*;
 
+function: functionHead LBRACE functionBody RBRACE;
+
+functionHead: type ID LPAREN arguments RPAREN;
+
+arg: type ID;
+arguments: arg? (',' arg)*;
+
+functionBody: (statement | expression)*;
+
+statement
+    : assignmentStatement
+    | returnStatement
+    ;
+
+returnStatement: 'return' expression;
+
+assignmentStatement: type ID EQ expression;
 
 expression
-   :  expression  POW expression
-   |  expression  (TIMES | DIV)  expression
-   |  expression  (PLUS | MINUS) expression
+   :  expression POW expression
+   |  expression (TIMES | DIV)  expression
+   |  expression (PLUS | MINUS) expression
    |  LPAREN expression RPAREN
    |  (PLUS | MINUS)* atom
+   | functionCall
    ;
+
+
+param: expression;
+params: param? (',' param)*;
+
+functionCall: ID LPAREN params RPAREN;
+
 
 atom
-   : scientific
-   | variable
-   ;
+    : INT
+    | DECIMAL
+    | ID
+    ;
 
-scientific
-   : SCIENTIFIC_NUMBER
-   ;
+type
+    : 'int'
+    | 'double'
+    ;
 
-variable
-   : VARIABLE
-   ;
+ID: [a-zA-Z]+ DIGIT*;
+TIMES: '*';
+DIV: '/';
+PLUS: '+';
+MINUS: '-';
+LPAREN: '(';
+RPAREN: ')';
+POW: '^';
+EQ: '=';
+LBRACE: '{';
+RBRACE: '}';
 
-relop
-   : EQ
-   | GT
-   | LT
-   ;
+INT: SIGN DIGIT+;
+DECIMAL: INT '.' INT;
 
-
-VARIABLE
-   : VALID_ID_START VALID_ID_CHAR*
-   ;
-
-
-fragment VALID_ID_START
-   : ('a' .. 'z') | ('A' .. 'Z') | '_'
-   ;
-
-
-fragment VALID_ID_CHAR
-   : VALID_ID_START | ('0' .. '9')
-   ;
-
-
-SCIENTIFIC_NUMBER
-   : NUMBER (E SIGN? NUMBER)?
-   ;
-
-//The integer part gets its potential sign from the signedAtom rule
-
-fragment NUMBER
-   : ('0' .. '9') + ('.' ('0' .. '9') +)?
-   ;
-
-
-fragment E
-   : 'E' | 'e'
-   ;
-
-
-fragment SIGN
-   : ('+' | '-')
-   ;
-
-
-LPAREN
-   : '('
-   ;
-
-
-RPAREN
-   : ')'
-   ;
-
-
-PLUS
-   : '+'
-   ;
-
-
-MINUS
-   : '-'
-   ;
-
-
-TIMES
-   : '*'
-   ;
-
-
-DIV
-   : '/'
-   ;
-
-
-GT
-   : '>'
-   ;
-
-
-LT
-   : '<'
-   ;
-
-
-EQ
-   : '='
-   ;
-
-
-POINT
-   : '.'
-   ;
-
-
-POW
-   : '^'
-   ;
+fragment DIGIT: [0-9];
+fragment SIGN: (MINUS)?;
 
 
 WS
