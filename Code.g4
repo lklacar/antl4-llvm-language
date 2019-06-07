@@ -21,12 +21,12 @@ returnStatement: 'return' expression;
 assignmentStatement: type ID EQ expression;
 
 expression
-   :  expression POW expression
-   |  expression (TIMES | DIV)  expression
-   |  expression (PLUS | MINUS) expression
-   |  LPAREN expression RPAREN
-   |  (PLUS | MINUS)* atom
-   | functionCall
+   :  expression op=POW expression            #expressionPow
+   |  expression op=(TIMES | DIV)  expression #expressionMul
+   |  expression op=(PLUS | MINUS) expression #expressionAdd
+   |  LPAREN expression RPAREN                #expressionNested
+   |  (PLUS | MINUS)* atom                    #expressionNumber
+   | functionCall                             #expressionFunctionCall
    ;
 
 
@@ -37,9 +37,9 @@ functionCall: ID LPAREN params RPAREN;
 
 
 atom
-    : INT
-    | DECIMAL
-    | ID
+    : op=INT
+    | op=DECIMAL
+    | op=ID
     ;
 
 type

@@ -1,8 +1,4 @@
 
 int a(int c) {
-    return 0
-}
-
-int b() {
-    return a(5)
+    return 1+5+3*6+(1+1)*5
 }

@@ -9,7 +9,7 @@ import sys
 def serializedATN():
     with StringIO() as buf:
         buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\26")
-        buf.write("\u0084\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\u0087\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\3\2\7\2\"\n\2\f\2\16\2%\13\2")
         buf.write("\3\3\3\3\3\3\3\3\3\3\3\4\3\4\3\4\3\4\3\4\3\4\3\5\3\5\3")
@@ -19,37 +19,39 @@ def serializedATN():
         buf.write("\7\13X\n\13\f\13\16\13[\13\13\3\13\3\13\5\13_\n\13\3\13")
         buf.write("\3\13\3\13\3\13\3\13\3\13\3\13\3\13\3\13\7\13j\n\13\f")
         buf.write("\13\16\13m\13\13\3\f\3\f\3\r\5\rr\n\r\3\r\3\r\7\rv\n\r")
-        buf.write("\f\r\16\ry\13\r\3\16\3\16\3\16\3\16\3\16\3\17\3\17\3\20")
-        buf.write("\3\20\3\20\2\3\24\21\2\4\6\b\n\f\16\20\22\24\26\30\32")
-        buf.write("\34\36\2\6\3\2\n\13\3\2\b\t\4\2\7\7\22\23\3\2\5\6\2\u0082")
-        buf.write("\2#\3\2\2\2\4&\3\2\2\2\6+\3\2\2\2\b\61\3\2\2\2\n\65\3")
-        buf.write("\2\2\2\fB\3\2\2\2\16G\3\2\2\2\20I\3\2\2\2\22L\3\2\2\2")
-        buf.write("\24^\3\2\2\2\26n\3\2\2\2\30q\3\2\2\2\32z\3\2\2\2\34\177")
-        buf.write("\3\2\2\2\36\u0081\3\2\2\2 \"\5\4\3\2! \3\2\2\2\"%\3\2")
-        buf.write("\2\2#!\3\2\2\2#$\3\2\2\2$\3\3\2\2\2%#\3\2\2\2&\'\5\6\4")
-        buf.write("\2\'(\7\20\2\2()\5\f\7\2)*\7\21\2\2*\5\3\2\2\2+,\5\36")
-        buf.write("\20\2,-\7\7\2\2-.\7\f\2\2./\5\n\6\2/\60\7\r\2\2\60\7\3")
-        buf.write("\2\2\2\61\62\5\36\20\2\62\63\7\7\2\2\63\t\3\2\2\2\64\66")
-        buf.write("\5\b\5\2\65\64\3\2\2\2\65\66\3\2\2\2\66;\3\2\2\2\678\7")
-        buf.write("\3\2\28:\5\b\5\29\67\3\2\2\2:=\3\2\2\2;9\3\2\2\2;<\3\2")
-        buf.write("\2\2<\13\3\2\2\2=;\3\2\2\2>A\5\16\b\2?A\5\24\13\2@>\3")
-        buf.write("\2\2\2@?\3\2\2\2AD\3\2\2\2B@\3\2\2\2BC\3\2\2\2C\r\3\2")
-        buf.write("\2\2DB\3\2\2\2EH\5\22\n\2FH\5\20\t\2GE\3\2\2\2GF\3\2\2")
-        buf.write("\2H\17\3\2\2\2IJ\7\4\2\2JK\5\24\13\2K\21\3\2\2\2LM\5\36")
-        buf.write("\20\2MN\7\7\2\2NO\7\17\2\2OP\5\24\13\2P\23\3\2\2\2QR\b")
-        buf.write("\13\1\2RS\7\f\2\2ST\5\24\13\2TU\7\r\2\2U_\3\2\2\2VX\t")
-        buf.write("\2\2\2WV\3\2\2\2X[\3\2\2\2YW\3\2\2\2YZ\3\2\2\2Z\\\3\2")
-        buf.write("\2\2[Y\3\2\2\2\\_\5\34\17\2]_\5\32\16\2^Q\3\2\2\2^Y\3")
-        buf.write("\2\2\2^]\3\2\2\2_k\3\2\2\2`a\f\b\2\2ab\7\16\2\2bj\5\24")
-        buf.write("\13\tcd\f\7\2\2de\t\3\2\2ej\5\24\13\bfg\f\6\2\2gh\t\2")
-        buf.write("\2\2hj\5\24\13\7i`\3\2\2\2ic\3\2\2\2if\3\2\2\2jm\3\2\2")
-        buf.write("\2ki\3\2\2\2kl\3\2\2\2l\25\3\2\2\2mk\3\2\2\2no\5\24\13")
-        buf.write("\2o\27\3\2\2\2pr\5\26\f\2qp\3\2\2\2qr\3\2\2\2rw\3\2\2")
-        buf.write("\2st\7\3\2\2tv\5\26\f\2us\3\2\2\2vy\3\2\2\2wu\3\2\2\2")
-        buf.write("wx\3\2\2\2x\31\3\2\2\2yw\3\2\2\2z{\7\7\2\2{|\7\f\2\2|")
-        buf.write("}\5\30\r\2}~\7\r\2\2~\33\3\2\2\2\177\u0080\t\4\2\2\u0080")
-        buf.write("\35\3\2\2\2\u0081\u0082\t\5\2\2\u0082\37\3\2\2\2\16#\65")
-        buf.write(";@BGY^ikqw")
+        buf.write("\f\r\16\ry\13\r\3\16\3\16\3\16\3\16\3\16\3\17\3\17\3\17")
+        buf.write("\5\17\u0083\n\17\3\20\3\20\3\20\2\3\24\21\2\4\6\b\n\f")
+        buf.write("\16\20\22\24\26\30\32\34\36\2\5\3\2\n\13\3\2\b\t\3\2\5")
+        buf.write("\6\2\u0087\2#\3\2\2\2\4&\3\2\2\2\6+\3\2\2\2\b\61\3\2\2")
+        buf.write("\2\n\65\3\2\2\2\fB\3\2\2\2\16G\3\2\2\2\20I\3\2\2\2\22")
+        buf.write("L\3\2\2\2\24^\3\2\2\2\26n\3\2\2\2\30q\3\2\2\2\32z\3\2")
+        buf.write("\2\2\34\u0082\3\2\2\2\36\u0084\3\2\2\2 \"\5\4\3\2! \3")
+        buf.write("\2\2\2\"%\3\2\2\2#!\3\2\2\2#$\3\2\2\2$\3\3\2\2\2%#\3\2")
+        buf.write("\2\2&\'\5\6\4\2\'(\7\20\2\2()\5\f\7\2)*\7\21\2\2*\5\3")
+        buf.write("\2\2\2+,\5\36\20\2,-\7\7\2\2-.\7\f\2\2./\5\n\6\2/\60\7")
+        buf.write("\r\2\2\60\7\3\2\2\2\61\62\5\36\20\2\62\63\7\7\2\2\63\t")
+        buf.write("\3\2\2\2\64\66\5\b\5\2\65\64\3\2\2\2\65\66\3\2\2\2\66")
+        buf.write(";\3\2\2\2\678\7\3\2\28:\5\b\5\29\67\3\2\2\2:=\3\2\2\2")
+        buf.write(";9\3\2\2\2;<\3\2\2\2<\13\3\2\2\2=;\3\2\2\2>A\5\16\b\2")
+        buf.write("?A\5\24\13\2@>\3\2\2\2@?\3\2\2\2AD\3\2\2\2B@\3\2\2\2B")
+        buf.write("C\3\2\2\2C\r\3\2\2\2DB\3\2\2\2EH\5\22\n\2FH\5\20\t\2G")
+        buf.write("E\3\2\2\2GF\3\2\2\2H\17\3\2\2\2IJ\7\4\2\2JK\5\24\13\2")
+        buf.write("K\21\3\2\2\2LM\5\36\20\2MN\7\7\2\2NO\7\17\2\2OP\5\24\13")
+        buf.write("\2P\23\3\2\2\2QR\b\13\1\2RS\7\f\2\2ST\5\24\13\2TU\7\r")
+        buf.write("\2\2U_\3\2\2\2VX\t\2\2\2WV\3\2\2\2X[\3\2\2\2YW\3\2\2\2")
+        buf.write("YZ\3\2\2\2Z\\\3\2\2\2[Y\3\2\2\2\\_\5\34\17\2]_\5\32\16")
+        buf.write("\2^Q\3\2\2\2^Y\3\2\2\2^]\3\2\2\2_k\3\2\2\2`a\f\b\2\2a")
+        buf.write("b\7\16\2\2bj\5\24\13\tcd\f\7\2\2de\t\3\2\2ej\5\24\13\b")
+        buf.write("fg\f\6\2\2gh\t\2\2\2hj\5\24\13\7i`\3\2\2\2ic\3\2\2\2i")
+        buf.write("f\3\2\2\2jm\3\2\2\2ki\3\2\2\2kl\3\2\2\2l\25\3\2\2\2mk")
+        buf.write("\3\2\2\2no\5\24\13\2o\27\3\2\2\2pr\5\26\f\2qp\3\2\2\2")
+        buf.write("qr\3\2\2\2rw\3\2\2\2st\7\3\2\2tv\5\26\f\2us\3\2\2\2vy")
+        buf.write("\3\2\2\2wu\3\2\2\2wx\3\2\2\2x\31\3\2\2\2yw\3\2\2\2z{\7")
+        buf.write("\7\2\2{|\7\f\2\2|}\5\30\r\2}~\7\r\2\2~\33\3\2\2\2\177")
+        buf.write("\u0083\7\22\2\2\u0080\u0083\7\23\2\2\u0081\u0083\7\7\2")
+        buf.write("\2\u0082\177\3\2\2\2\u0082\u0080\3\2\2\2\u0082\u0081\3")
+        buf.write("\2\2\2\u0083\35\3\2\2\2\u0084\u0085\t\4\2\2\u0085\37\3")
+        buf.write("\2\2\2\17#\65;@BGY^ikqw\u0082")
         return buf.getvalue()
 
 
@@ -140,6 +142,14 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_program
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterProgram" ):
+                listener.enterProgram(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitProgram" ):
+                listener.exitProgram(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitProgram" ):
                 return visitor.visitProgram(self)
@@ -197,6 +207,14 @@ class CodeParser ( Parser ):
 
         def getRuleIndex(self):
             return CodeParser.RULE_function
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunction" ):
+                listener.enterFunction(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunction" ):
+                listener.exitFunction(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitFunction" ):
@@ -256,6 +274,14 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_functionHead
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionHead" ):
+                listener.enterFunctionHead(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionHead" ):
+                listener.exitFunctionHead(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitFunctionHead" ):
                 return visitor.visitFunctionHead(self)
@@ -306,6 +332,14 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_arg
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterArg" ):
+                listener.enterArg(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitArg" ):
+                listener.exitArg(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitArg" ):
                 return visitor.visitArg(self)
@@ -349,6 +383,14 @@ class CodeParser ( Parser ):
 
         def getRuleIndex(self):
             return CodeParser.RULE_arguments
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterArguments" ):
+                listener.enterArguments(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitArguments" ):
+                listener.exitArguments(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitArguments" ):
@@ -418,6 +460,14 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_functionBody
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionBody" ):
+                listener.enterFunctionBody(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionBody" ):
+                listener.exitFunctionBody(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitFunctionBody" ):
                 return visitor.visitFunctionBody(self)
@@ -482,6 +532,14 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_statement
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStatement" ):
+                listener.enterStatement(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStatement" ):
+                listener.exitStatement(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitStatement" ):
                 return visitor.visitStatement(self)
@@ -534,6 +592,14 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_returnStatement
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterReturnStatement" ):
+                listener.enterReturnStatement(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitReturnStatement" ):
+                listener.exitReturnStatement(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitReturnStatement" ):
                 return visitor.visitReturnStatement(self)
@@ -585,6 +651,14 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_assignmentStatement
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssignmentStatement" ):
+                listener.enterAssignmentStatement(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssignmentStatement" ):
+                listener.exitAssignmentStatement(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitAssignmentStatement" ):
                 return visitor.visitAssignmentStatement(self)
@@ -623,8 +697,21 @@ class CodeParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def LPAREN(self):
-            return self.getToken(CodeParser.LPAREN, 0)
+
+        def getRuleIndex(self):
+            return CodeParser.RULE_expression
+
+     
+        def copyFrom(self, ctx:ParserRuleContext):
+            super().copyFrom(ctx)
+
+
+    class ExpressionAddContext(ExpressionContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CodeParser.ExpressionContext
+            super().__init__(parser)
+            self.op = None # Token
+            self.copyFrom(ctx)
 
         def expression(self, i:int=None):
             if i is None:
@@ -632,45 +719,175 @@ class CodeParser ( Parser ):
             else:
                 return self.getTypedRuleContext(CodeParser.ExpressionContext,i)
 
+        def PLUS(self):
+            return self.getToken(CodeParser.PLUS, 0)
+        def MINUS(self):
+            return self.getToken(CodeParser.MINUS, 0)
 
-        def RPAREN(self):
-            return self.getToken(CodeParser.RPAREN, 0)
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExpressionAdd" ):
+                listener.enterExpressionAdd(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExpressionAdd" ):
+                listener.exitExpressionAdd(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpressionAdd" ):
+                return visitor.visitExpressionAdd(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExpressionMulContext(ExpressionContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CodeParser.ExpressionContext
+            super().__init__(parser)
+            self.op = None # Token
+            self.copyFrom(ctx)
+
+        def expression(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CodeParser.ExpressionContext)
+            else:
+                return self.getTypedRuleContext(CodeParser.ExpressionContext,i)
+
+        def TIMES(self):
+            return self.getToken(CodeParser.TIMES, 0)
+        def DIV(self):
+            return self.getToken(CodeParser.DIV, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExpressionMul" ):
+                listener.enterExpressionMul(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExpressionMul" ):
+                listener.exitExpressionMul(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpressionMul" ):
+                return visitor.visitExpressionMul(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExpressionNumberContext(ExpressionContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CodeParser.ExpressionContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
 
         def atom(self):
             return self.getTypedRuleContext(CodeParser.AtomContext,0)
-
 
         def PLUS(self, i:int=None):
             if i is None:
                 return self.getTokens(CodeParser.PLUS)
             else:
                 return self.getToken(CodeParser.PLUS, i)
-
         def MINUS(self, i:int=None):
             if i is None:
                 return self.getTokens(CodeParser.MINUS)
             else:
                 return self.getToken(CodeParser.MINUS, i)
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExpressionNumber" ):
+                listener.enterExpressionNumber(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExpressionNumber" ):
+                listener.exitExpressionNumber(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpressionNumber" ):
+                return visitor.visitExpressionNumber(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExpressionNestedContext(ExpressionContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CodeParser.ExpressionContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def LPAREN(self):
+            return self.getToken(CodeParser.LPAREN, 0)
+        def expression(self):
+            return self.getTypedRuleContext(CodeParser.ExpressionContext,0)
+
+        def RPAREN(self):
+            return self.getToken(CodeParser.RPAREN, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExpressionNested" ):
+                listener.enterExpressionNested(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExpressionNested" ):
+                listener.exitExpressionNested(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpressionNested" ):
+                return visitor.visitExpressionNested(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExpressionFunctionCallContext(ExpressionContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CodeParser.ExpressionContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
         def functionCall(self):
             return self.getTypedRuleContext(CodeParser.FunctionCallContext,0)
 
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExpressionFunctionCall" ):
+                listener.enterExpressionFunctionCall(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExpressionFunctionCall" ):
+                listener.exitExpressionFunctionCall(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpressionFunctionCall" ):
+                return visitor.visitExpressionFunctionCall(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExpressionPowContext(ExpressionContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CodeParser.ExpressionContext
+            super().__init__(parser)
+            self.op = None # Token
+            self.copyFrom(ctx)
+
+        def expression(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CodeParser.ExpressionContext)
+            else:
+                return self.getTypedRuleContext(CodeParser.ExpressionContext,i)
+
         def POW(self):
             return self.getToken(CodeParser.POW, 0)
 
-        def TIMES(self):
-            return self.getToken(CodeParser.TIMES, 0)
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExpressionPow" ):
+                listener.enterExpressionPow(self)
 
-        def DIV(self):
-            return self.getToken(CodeParser.DIV, 0)
-
-        def getRuleIndex(self):
-            return CodeParser.RULE_expression
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExpressionPow" ):
+                listener.exitExpressionPow(self)
 
         def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitExpression" ):
-                return visitor.visitExpression(self)
+            if hasattr( visitor, "visitExpressionPow" ):
+                return visitor.visitExpressionPow(self)
             else:
                 return visitor.visitChildren(self)
 
@@ -690,6 +907,10 @@ class CodeParser ( Parser ):
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
             if la_ == 1:
+                localctx = CodeParser.ExpressionNestedContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+
                 self.state = 80
                 self.match(CodeParser.LPAREN)
                 self.state = 81
@@ -699,6 +920,9 @@ class CodeParser ( Parser ):
                 pass
 
             elif la_ == 2:
+                localctx = CodeParser.ExpressionNumberContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
                 self.state = 87
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
@@ -719,6 +943,9 @@ class CodeParser ( Parser ):
                 pass
 
             elif la_ == 3:
+                localctx = CodeParser.ExpressionFunctionCallContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
                 self.state = 91
                 self.functionCall()
                 pass
@@ -737,29 +964,30 @@ class CodeParser ( Parser ):
                     self._errHandler.sync(self)
                     la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
                     if la_ == 1:
-                        localctx = CodeParser.ExpressionContext(self, _parentctx, _parentState)
+                        localctx = CodeParser.ExpressionPowContext(self, CodeParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 94
                         if not self.precpred(self._ctx, 6):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
                         self.state = 95
-                        self.match(CodeParser.POW)
+                        localctx.op = self.match(CodeParser.POW)
                         self.state = 96
                         self.expression(7)
                         pass
 
                     elif la_ == 2:
-                        localctx = CodeParser.ExpressionContext(self, _parentctx, _parentState)
+                        localctx = CodeParser.ExpressionMulContext(self, CodeParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 97
                         if not self.precpred(self._ctx, 5):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
                         self.state = 98
+                        localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
                         if not(_la==CodeParser.TIMES or _la==CodeParser.DIV):
-                            self._errHandler.recoverInline(self)
+                            localctx.op = self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
                             self.consume()
@@ -768,16 +996,17 @@ class CodeParser ( Parser ):
                         pass
 
                     elif la_ == 3:
-                        localctx = CodeParser.ExpressionContext(self, _parentctx, _parentState)
+                        localctx = CodeParser.ExpressionAddContext(self, CodeParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 100
                         if not self.precpred(self._ctx, 4):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
                         self.state = 101
+                        localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
                         if not(_la==CodeParser.PLUS or _la==CodeParser.MINUS):
-                            self._errHandler.recoverInline(self)
+                            localctx.op = self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
                             self.consume()
@@ -811,6 +1040,14 @@ class CodeParser ( Parser ):
 
         def getRuleIndex(self):
             return CodeParser.RULE_param
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterParam" ):
+                listener.enterParam(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitParam" ):
+                listener.exitParam(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitParam" ):
@@ -853,6 +1090,14 @@ class CodeParser ( Parser ):
 
         def getRuleIndex(self):
             return CodeParser.RULE_params
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterParams" ):
+                listener.enterParams(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitParams" ):
+                listener.exitParams(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitParams" ):
@@ -921,6 +1166,14 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_functionCall
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionCall" ):
+                listener.enterFunctionCall(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionCall" ):
+                listener.exitFunctionCall(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitFunctionCall" ):
                 return visitor.visitFunctionCall(self)
@@ -958,6 +1211,7 @@ class CodeParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+            self.op = None # Token
 
         def INT(self):
             return self.getToken(CodeParser.INT, 0)
@@ -970,6 +1224,14 @@ class CodeParser ( Parser ):
 
         def getRuleIndex(self):
             return CodeParser.RULE_atom
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAtom" ):
+                listener.enterAtom(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAtom" ):
+                listener.exitAtom(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitAtom" ):
@@ -984,16 +1246,28 @@ class CodeParser ( Parser ):
 
         localctx = CodeParser.AtomContext(self, self._ctx, self.state)
         self.enterRule(localctx, 26, self.RULE_atom)
-        self._la = 0 # Token type
         try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 125
-            _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CodeParser.ID) | (1 << CodeParser.INT) | (1 << CodeParser.DECIMAL))) != 0)):
-                self._errHandler.recoverInline(self)
+            self.state = 128
+            self._errHandler.sync(self)
+            token = self._input.LA(1)
+            if token in [CodeParser.INT]:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 125
+                localctx.op = self.match(CodeParser.INT)
+                pass
+            elif token in [CodeParser.DECIMAL]:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 126
+                localctx.op = self.match(CodeParser.DECIMAL)
+                pass
+            elif token in [CodeParser.ID]:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 127
+                localctx.op = self.match(CodeParser.ID)
+                pass
             else:
-                self._errHandler.reportMatch(self)
-                self.consume()
+                raise NoViableAltException(self)
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1013,6 +1287,14 @@ class CodeParser ( Parser ):
         def getRuleIndex(self):
             return CodeParser.RULE_type
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterType" ):
+                listener.enterType(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitType" ):
+                listener.exitType(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitType" ):
                 return visitor.visitType(self)
@@ -1029,7 +1311,7 @@ class CodeParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 127
+            self.state = 130
             _la = self._input.LA(1)
             if not(_la==CodeParser.T__2 or _la==CodeParser.T__3):
                 self._errHandler.recoverInline(self)
