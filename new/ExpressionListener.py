@@ -15,10 +15,24 @@ class ExpressionListener(CodeListener):
         left = self.stack.pop()
         right = self.stack.pop()
 
+        if isinstance(left.type, ir.DoubleType) or isinstance(right.type, ir.DoubleType):
+            add_function = self.builder.fadd
+            sub_function = self.builder.fsub
+
+            double_type = ir.DoubleType()
+            left = self.builder.inttoptr(left, double_type)
+            right = self.builder.inttoptr(right, double_type)
+
+        elif isinstance(left.type, ir.IntType) and isinstance(right.type, ir.IntType):
+            add_function = self.builder.add
+            sub_function = self.builder.sub
+        else:
+            raise Exception("Cannot convert {} and {} to the same type".format(left, right))
+
         if ctx.op.text == "+":
-            self.stack.append(self.builder.fadd(left, right))
+            self.stack.append(add_function(left, right))
         elif ctx.op.text == "-":
-            self.stack.append(self.builder.sub(left, right))
+            self.stack.append(sub_function(left, right))
 
     def exitExpressionMul(self, ctx: CodeParser.ExpressionAddContext):
         left = self.stack.pop()

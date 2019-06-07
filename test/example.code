@@ -1,6 +1,6 @@
 
 double asdadasd(int c, int d) {
-    int a = 5;
+    int a = 5
 
-    return a;
+    return a + 10.4
 }
