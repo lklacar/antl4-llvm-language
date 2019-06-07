@@ -1,4 +1,4 @@
 
-int a(int c) {
+double asdadasd(int c, int d) {
     return 1+5+3*6+(1+1)*5
 }
