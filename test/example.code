@@ -3,8 +3,7 @@ int add(int b, int c) {
     return b+c
 }
 
-int b() {
-    int c = add(1,2)
-
+int start() {
+    int c = add(1,123)
     return c
 }
