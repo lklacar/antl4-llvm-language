@@ -3,8 +3,8 @@ from llvmlite import ir
 
 from generated.CodeListener import CodeListener
 from generated.CodeParser import CodeParser
-from new.FunctionListener import FunctionListener
-from new.ProgramContext import ProgramContext
+from compiler.listener.FunctionListener import FunctionListener
+from compiler.context.ProgramContext import ProgramContext
 
 
 class ProgramListener(CodeListener):

@@ -1,50 +1,35 @@
 from antlr4 import ParseTreeWalker
+from llvmlite.ir import Argument
 
 from generated.CodeLexer import CodeLexer
 from generated.CodeListener import CodeListener
 from generated.CodeParser import CodeParser
 from llvmlite import ir
 
-from new.FunctionContext import FunctionContext
+from compiler.context.FunctionContext import FunctionContext
 
 
 class ExpressionListener(CodeListener):
     stack = []
 
-    def __init__(self, builder: ir.IRBuilder, context:FunctionContext):
+    def __init__(self, builder: ir.IRBuilder, context: FunctionContext):
         self.context = context
         self.builder = builder
 
-    def exitExpressionFunctionCall(self, ctx:CodeParser.ExpressionFunctionCallContext):
-        name = ctx.functionCall().ID().getText()
-        callee_function_context = self.context.program_context.get_function(name)
+    def exitExpressionFunctionCall(self, ctx: CodeParser.ExpressionFunctionCallContext):
+        program_context = self.context.program_context
+        callee_function_context = program_context.get_function(ctx.functionCall().ID().getText())
+        callee_function = callee_function_context.function
 
-        params = ctx.functionCall().params().param()
-        param_names = []
-        callee_function_context = self.context.program_context.get_function(name)
-        callee_function_head = callee_function_context.function_head
-        callee_arguments = callee_function_head.arguments()
+        params = []
+        for param in ctx.functionCall().params().param():
+            listener = ExpressionListener(self.builder, self.context)
+            walker = ParseTreeWalker()
+            walker.walk(listener, param.expression())
+            expression_result = listener.stack.pop()
+            params.append(expression_result)
 
-
-        i = 0
-        values = []
-        for param in params:
-            if isinstance(param, CodeParser.ParamContext):
-                walker = ParseTreeWalker()
-                listener = ExpressionListener(self.builder, self.context)
-                walker.walk(listener, param.expression())
-                value = listener.stack.pop()
-                values.append(value)
-                argument_name = callee_arguments.arg()[i].ID().getText()
-
-                pointer = self.builder.alloca(value.type, value)
-                self.builder.store(value, pointer)
-
-
-                callee_function_context.add_variable(argument_name, pointer)
-
-        self.builder.call(callee_function_context.function, values)
-
+        self.builder.call(callee_function, params)
 
 
     def exitExpressionAdd(self, ctx: CodeParser.ExpressionAddContext):
@@ -88,7 +73,12 @@ class ExpressionListener(CodeListener):
             res = ir.Constant(ir.DoubleType(), float(val))
         elif t == CodeParser.ID:
             pointer = self.context.get_variable(val)
-            res = self.builder.load(pointer, val)
+
+            # Can be either argument or local variable
+            if isinstance(pointer, Argument):
+                res = pointer
+            else:
+                res = self.builder.load(pointer, val)
         else:
             raise Exception("Cannot convert type {0} to machine LLVM".format(str(t)))
 
