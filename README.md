@@ -30,3 +30,17 @@ Edit ./test/example.code to test another expressions.
 ```bash
 objdump -d ./out/evaluate.o
 ```
+
+## Example language syntax
+
+```c
+
+int add(int b, int c, int d) {
+    return b+c+d
+}
+
+int start() {
+    int c = add(1,2,3)
+    return c
+}
+```
