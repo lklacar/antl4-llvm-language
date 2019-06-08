@@ -1,11 +1,10 @@
 from antlr4 import ParseTreeWalker
-
-from generated.CodeListener import CodeListener
-from generated.CodeParser import CodeParser
 from llvmlite import ir
 
 from compiler.context.FunctionContext import FunctionContext
 from compiler.listener.StatemetListener import StatementListener
+from generated.CodeListener import CodeListener
+from generated.CodeParser import CodeParser
 
 
 class FunctionBodyListener(CodeListener):

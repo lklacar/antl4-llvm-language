@@ -1,11 +1,11 @@
 import sys
 
+import llvmlite.binding as llvm
 from antlr4 import *
 
+from compiler.listener.ProgramListener import ProgramListener
 from generated.CodeLexer import CodeLexer
 from generated.CodeParser import CodeParser
-from compiler.listener.ProgramListener import ProgramListener
-import llvmlite.binding as llvm
 
 
 def generate_object_file(module):

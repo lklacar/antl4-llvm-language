@@ -1,5 +1,7 @@
-from generated.CodeParser import CodeParser
 from llvmlite import ir
+
+from generated.CodeParser import CodeParser
+
 
 def map_type(t: CodeParser.TypeContext):
     val = t.getText()
