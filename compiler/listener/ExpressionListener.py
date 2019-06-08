@@ -1,12 +1,11 @@
 from antlr4 import ParseTreeWalker
+from llvmlite import ir
 from llvmlite.ir import Argument
 
+from compiler.context.FunctionContext import FunctionContext
 from generated.CodeLexer import CodeLexer
 from generated.CodeListener import CodeListener
 from generated.CodeParser import CodeParser
-from llvmlite import ir
-
-from compiler.context.FunctionContext import FunctionContext
 
 
 class ExpressionListener(CodeListener):
@@ -29,8 +28,7 @@ class ExpressionListener(CodeListener):
             expression_result = listener.stack.pop()
             params.append(expression_result)
 
-        self.builder.call(callee_function, params)
-
+        self.stack.append(self.builder.call(callee_function, params))
 
     def exitExpressionAdd(self, ctx: CodeParser.ExpressionAddContext):
         left = self.stack.pop()

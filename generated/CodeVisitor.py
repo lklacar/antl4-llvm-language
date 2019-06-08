@@ -69,13 +69,13 @@ class CodeVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by CodeParser#expressionNested.
-    def visitExpressionNested(self, ctx:CodeParser.ExpressionNestedContext):
+    # Visit a parse tree produced by CodeParser#expressionFunctionCall.
+    def visitExpressionFunctionCall(self, ctx:CodeParser.ExpressionFunctionCallContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by CodeParser#expressionFunctionCall.
-    def visitExpressionFunctionCall(self, ctx:CodeParser.ExpressionFunctionCallContext):
+    # Visit a parse tree produced by CodeParser#expressionNested.
+    def visitExpressionNested(self, ctx:CodeParser.ExpressionNestedContext):
         return self.visitChildren(ctx)
 
 
