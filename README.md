@@ -44,3 +44,12 @@ int start() {
     return c
 }
 ```
+
+## Features
+- Function definitions
+- Assignment statement
+- int, double types
+- Expression evaluation
+- Function calls
+- Auto cast to double
+- Return statement
