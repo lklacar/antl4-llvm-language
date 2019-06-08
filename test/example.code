@@ -1,6 +1,10 @@
 
-double asdadasd(int c, int d) {
-    int a = 5
+int add(int b, int c) {
+    return b+c
+}
 
-    return a + 10.4
+int b() {
+    int c = add(1,2)
+
+    return c
 }

@@ -24,4 +24,11 @@ class StatementListener(CodeListener):
         t = map_type(ctx.type())
         name = ctx.ID().getText()
         pointer = self.builder.alloca(t, 1, name)
+
+        walker = ParseTreeWalker()
+        listener = ExpressionListener(self.builder, self.context)
+        walker.walk(listener, ctx)
+        value = listener.stack.pop()
+        self.builder.store(value, pointer)
+
         self.context.add_variable(name, pointer)

@@ -116,21 +116,21 @@ class CodeListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CodeParser#expressionNested.
-    def enterExpressionNested(self, ctx:CodeParser.ExpressionNestedContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#expressionNested.
-    def exitExpressionNested(self, ctx:CodeParser.ExpressionNestedContext):
-        pass
-
-
     # Enter a parse tree produced by CodeParser#expressionFunctionCall.
     def enterExpressionFunctionCall(self, ctx:CodeParser.ExpressionFunctionCallContext):
         pass
 
     # Exit a parse tree produced by CodeParser#expressionFunctionCall.
     def exitExpressionFunctionCall(self, ctx:CodeParser.ExpressionFunctionCallContext):
+        pass
+
+
+    # Enter a parse tree produced by CodeParser#expressionNested.
+    def enterExpressionNested(self, ctx:CodeParser.ExpressionNestedContext):
+        pass
+
+    # Exit a parse tree produced by CodeParser#expressionNested.
+    def exitExpressionNested(self, ctx:CodeParser.ExpressionNestedContext):
         pass
 
 

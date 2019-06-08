@@ -22,11 +22,11 @@ assignmentStatement: type ID EQ expression;
 
 expression
    :  expression op=POW expression            #expressionPow
+   | functionCall                             #expressionFunctionCall
    |  expression op=(TIMES | DIV)  expression #expressionMul
    |  expression op=(PLUS | MINUS) expression #expressionAdd
    |  LPAREN expression RPAREN                #expressionNested
    |  (PLUS | MINUS)* atom                    #expressionNumber
-   | functionCall                             #expressionFunctionCall
    ;
 
 

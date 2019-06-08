@@ -15,8 +15,8 @@ def serializedATN():
         buf.write("\3\3\3\3\3\3\3\3\3\3\3\4\3\4\3\4\3\4\3\4\3\4\3\5\3\5\3")
         buf.write("\5\3\6\5\6\66\n\6\3\6\3\6\7\6:\n\6\f\6\16\6=\13\6\3\7")
         buf.write("\7\7@\n\7\f\7\16\7C\13\7\3\b\3\b\5\bG\n\b\3\t\3\t\3\t")
-        buf.write("\3\n\3\n\3\n\3\n\3\n\3\13\3\13\3\13\3\13\3\13\3\13\7\13")
-        buf.write("W\n\13\f\13\16\13Z\13\13\3\13\3\13\5\13^\n\13\3\13\3\13")
+        buf.write("\3\n\3\n\3\n\3\n\3\n\3\13\3\13\3\13\3\13\3\13\3\13\3\13")
+        buf.write("\7\13X\n\13\f\13\16\13[\13\13\3\13\5\13^\n\13\3\13\3\13")
         buf.write("\3\13\3\13\3\13\3\13\3\13\3\13\3\13\7\13i\n\13\f\13\16")
         buf.write("\13l\13\13\3\f\3\f\3\r\5\rq\n\r\3\r\3\r\7\ru\n\r\f\r\16")
         buf.write("\rx\13\r\3\16\3\16\3\16\3\16\3\16\3\17\3\17\3\17\5\17")
@@ -36,21 +36,21 @@ def serializedATN():
         buf.write("\2\2A?\3\2\2\2AB\3\2\2\2B\r\3\2\2\2CA\3\2\2\2DG\5\22\n")
         buf.write("\2EG\5\20\t\2FD\3\2\2\2FE\3\2\2\2G\17\3\2\2\2HI\7\4\2")
         buf.write("\2IJ\5\24\13\2J\21\3\2\2\2KL\5\36\20\2LM\7\7\2\2MN\7\17")
-        buf.write("\2\2NO\5\24\13\2O\23\3\2\2\2PQ\b\13\1\2QR\7\f\2\2RS\5")
-        buf.write("\24\13\2ST\7\r\2\2T^\3\2\2\2UW\t\2\2\2VU\3\2\2\2WZ\3\2")
-        buf.write("\2\2XV\3\2\2\2XY\3\2\2\2Y[\3\2\2\2ZX\3\2\2\2[^\5\34\17")
-        buf.write("\2\\^\5\32\16\2]P\3\2\2\2]X\3\2\2\2]\\\3\2\2\2^j\3\2\2")
-        buf.write("\2_`\f\b\2\2`a\7\16\2\2ai\5\24\13\tbc\f\7\2\2cd\t\3\2")
-        buf.write("\2di\5\24\13\bef\f\6\2\2fg\t\2\2\2gi\5\24\13\7h_\3\2\2")
-        buf.write("\2hb\3\2\2\2he\3\2\2\2il\3\2\2\2jh\3\2\2\2jk\3\2\2\2k")
-        buf.write("\25\3\2\2\2lj\3\2\2\2mn\5\24\13\2n\27\3\2\2\2oq\5\26\f")
-        buf.write("\2po\3\2\2\2pq\3\2\2\2qv\3\2\2\2rs\7\3\2\2su\5\26\f\2")
-        buf.write("tr\3\2\2\2ux\3\2\2\2vt\3\2\2\2vw\3\2\2\2w\31\3\2\2\2x")
-        buf.write("v\3\2\2\2yz\7\7\2\2z{\7\f\2\2{|\5\30\r\2|}\7\r\2\2}\33")
+        buf.write("\2\2NO\5\24\13\2O\23\3\2\2\2PQ\b\13\1\2Q^\5\32\16\2RS")
+        buf.write("\7\f\2\2ST\5\24\13\2TU\7\r\2\2U^\3\2\2\2VX\t\2\2\2WV\3")
+        buf.write("\2\2\2X[\3\2\2\2YW\3\2\2\2YZ\3\2\2\2Z\\\3\2\2\2[Y\3\2")
+        buf.write("\2\2\\^\5\34\17\2]P\3\2\2\2]R\3\2\2\2]Y\3\2\2\2^j\3\2")
+        buf.write("\2\2_`\f\b\2\2`a\7\16\2\2ai\5\24\13\tbc\f\6\2\2cd\t\3")
+        buf.write("\2\2di\5\24\13\7ef\f\5\2\2fg\t\2\2\2gi\5\24\13\6h_\3\2")
+        buf.write("\2\2hb\3\2\2\2he\3\2\2\2il\3\2\2\2jh\3\2\2\2jk\3\2\2\2")
+        buf.write("k\25\3\2\2\2lj\3\2\2\2mn\5\24\13\2n\27\3\2\2\2oq\5\26")
+        buf.write("\f\2po\3\2\2\2pq\3\2\2\2qv\3\2\2\2rs\7\3\2\2su\5\26\f")
+        buf.write("\2tr\3\2\2\2ux\3\2\2\2vt\3\2\2\2vw\3\2\2\2w\31\3\2\2\2")
+        buf.write("xv\3\2\2\2yz\7\7\2\2z{\7\f\2\2{|\5\30\r\2|}\7\r\2\2}\33")
         buf.write("\3\2\2\2~\u0082\7\22\2\2\177\u0082\7\23\2\2\u0080\u0082")
         buf.write("\7\7\2\2\u0081~\3\2\2\2\u0081\177\3\2\2\2\u0081\u0080")
         buf.write("\3\2\2\2\u0082\35\3\2\2\2\u0083\u0084\t\4\2\2\u0084\37")
-        buf.write("\3\2\2\2\16#\65;AFX]hjpv\u0081")
+        buf.write("\3\2\2\2\16#\65;AFY]hjpv\u0081")
         return buf.getvalue()
 
 
@@ -787,6 +787,31 @@ class CodeParser ( Parser ):
                 return visitor.visitChildren(self)
 
 
+    class ExpressionFunctionCallContext(ExpressionContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CodeParser.ExpressionContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def functionCall(self):
+            return self.getTypedRuleContext(CodeParser.FunctionCallContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExpressionFunctionCall" ):
+                listener.enterExpressionFunctionCall(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExpressionFunctionCall" ):
+                listener.exitExpressionFunctionCall(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpressionFunctionCall" ):
+                return visitor.visitExpressionFunctionCall(self)
+            else:
+                return visitor.visitChildren(self)
+
+
     class ExpressionNestedContext(ExpressionContext):
 
         def __init__(self, parser, ctx:ParserRuleContext): # actually a CodeParser.ExpressionContext
@@ -812,31 +837,6 @@ class CodeParser ( Parser ):
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitExpressionNested" ):
                 return visitor.visitExpressionNested(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-    class ExpressionFunctionCallContext(ExpressionContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a CodeParser.ExpressionContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def functionCall(self):
-            return self.getTypedRuleContext(CodeParser.FunctionCallContext,0)
-
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterExpressionFunctionCall" ):
-                listener.enterExpressionFunctionCall(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitExpressionFunctionCall" ):
-                listener.exitExpressionFunctionCall(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitExpressionFunctionCall" ):
-                return visitor.visitExpressionFunctionCall(self)
             else:
                 return visitor.visitChildren(self)
 
@@ -887,47 +887,47 @@ class CodeParser ( Parser ):
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
             if la_ == 1:
-                localctx = CodeParser.ExpressionNestedContext(self, localctx)
+                localctx = CodeParser.ExpressionFunctionCallContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
                 self.state = 79
-                self.match(CodeParser.LPAREN)
-                self.state = 80
-                self.expression(0)
-                self.state = 81
-                self.match(CodeParser.RPAREN)
+                self.functionCall()
                 pass
 
             elif la_ == 2:
+                localctx = CodeParser.ExpressionNestedContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 80
+                self.match(CodeParser.LPAREN)
+                self.state = 81
+                self.expression(0)
+                self.state = 82
+                self.match(CodeParser.RPAREN)
+                pass
+
+            elif la_ == 3:
                 localctx = CodeParser.ExpressionNumberContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 86
+                self.state = 87
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while _la==CodeParser.PLUS or _la==CodeParser.MINUS:
-                    self.state = 83
+                    self.state = 84
                     _la = self._input.LA(1)
                     if not(_la==CodeParser.PLUS or _la==CodeParser.MINUS):
                         self._errHandler.recoverInline(self)
                     else:
                         self._errHandler.reportMatch(self)
                         self.consume()
-                    self.state = 88
+                    self.state = 89
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
 
-                self.state = 89
-                self.atom()
-                pass
-
-            elif la_ == 3:
-                localctx = CodeParser.ExpressionFunctionCallContext(self, localctx)
-                self._ctx = localctx
-                _prevctx = localctx
                 self.state = 90
-                self.functionCall()
+                self.atom()
                 pass
 
 
@@ -960,9 +960,9 @@ class CodeParser ( Parser ):
                         localctx = CodeParser.ExpressionMulContext(self, CodeParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 96
-                        if not self.precpred(self._ctx, 5):
+                        if not self.precpred(self._ctx, 4):
                             from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
                         self.state = 97
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
@@ -972,16 +972,16 @@ class CodeParser ( Parser ):
                             self._errHandler.reportMatch(self)
                             self.consume()
                         self.state = 98
-                        self.expression(6)
+                        self.expression(5)
                         pass
 
                     elif la_ == 3:
                         localctx = CodeParser.ExpressionAddContext(self, CodeParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 99
-                        if not self.precpred(self._ctx, 4):
+                        if not self.precpred(self._ctx, 3):
                             from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
                         self.state = 100
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
@@ -991,7 +991,7 @@ class CodeParser ( Parser ):
                             self._errHandler.reportMatch(self)
                             self.consume()
                         self.state = 101
-                        self.expression(5)
+                        self.expression(4)
                         pass
 
              
@@ -1324,11 +1324,11 @@ class CodeParser ( Parser ):
          
 
             if predIndex == 1:
-                return self.precpred(self._ctx, 5)
+                return self.precpred(self._ctx, 4)
          
 
             if predIndex == 2:
-                return self.precpred(self._ctx, 4)
+                return self.precpred(self._ctx, 3)
          
 
 
