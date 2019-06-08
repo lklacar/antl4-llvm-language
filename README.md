@@ -39,9 +39,15 @@ int add(int b, int c, int d) {
     return b+c+d
 }
 
+int complexExpression(int a, int b, int c) {
+    int d = 100;
+    return a + b + (a + d) * b
+}
+
 int start() {
     int c = add(1,2,3)
-    return c
+    int d = complexExpression(3,2,1)
+    return c + d
 }
 ```
 
