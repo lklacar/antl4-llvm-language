@@ -1,16 +1,23 @@
 #!/usr/bin/env bash
 
-#rm -rf out
-#mkdir out
+# Clean previous builds
+rm -rf out
+mkdir out
 
-#printf "Compiling...\n"
-#python3 compiler.py
+# Compile start
+as ./bootstrap/start.s -o ./out/start.o
 
-printf "Linking...\n"
-gcc ./bootstrap/main.c ./out/evaluate.o -o ./out/main
+# Compile stdlib
+clang -shared -nostdlib -O3 ./bootstrap/stdlib.c -o ./out/stdlib.o
 
-printf "Object dump...\n"
-objdump -d ./out/evaluate.o
+# Compile the program
+python3 ./run.py
 
-printf "Running...\n"
-./out/main
+# Link everything
+ld -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o ./out/program ./out/program.o ./out/start.o ./out/stdlib.o
+
+# Dump executable
+objdump -d ./out/program
+
+# Run executable
+./out/program

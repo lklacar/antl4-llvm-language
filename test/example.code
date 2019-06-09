@@ -11,6 +11,10 @@ int fibbonacci(int n) {
     return fibbonacci(n-1) + fibbonacci(n-2)
 }
 
-int start() {
-    return fibbonacci(10)
+int main() {
+    int res = fibbonacci(10)
+
+    int pres = printint(res)
+
+    return pres
 }

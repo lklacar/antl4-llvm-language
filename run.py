@@ -1,3 +1,4 @@
+import os
 import sys
 
 import llvmlite.binding as llvm
@@ -49,12 +50,13 @@ def generate_object_file(module):
 
     obj = target_machine.emit_object(module_ref)
 
-    with open("../out/evaluate.o", "wb") as f:
+    with open("./out/program.o", "wb") as f:
         f.write(obj)
 
 
 def main(argv):
-    input_stream = FileStream("../test/example.code")
+    print(os.getcwd())
+    input_stream = FileStream("./test/example.code")
     lexer = CodeLexer(input_stream)
     stream = CommonTokenStream(lexer)
     parser = CodeParser(stream)
