@@ -4,6 +4,8 @@
 - Lexer and parser written using antlr4
 - Machine code generated using LLVM
 - Currently only constant integer expression evaluation works
+- No runtime dependencies to libc
+- Custom stdlib and runtime 
 
 ## Requirements
 - LLVM 8
