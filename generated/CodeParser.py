@@ -8,7 +8,7 @@ import sys
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\31")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\32")
         buf.write("\u00a0\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
@@ -24,14 +24,14 @@ def serializedATN():
         buf.write("\n\20\f\20\16\20\u0092\13\20\3\21\3\21\3\21\3\21\3\21")
         buf.write("\3\22\3\22\3\22\5\22\u009c\n\22\3\23\3\23\3\23\2\3\26")
         buf.write("\24\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$\2\6\3\2")
-        buf.write("\13\f\3\2\t\n\4\2\20\20\23\24\3\2\6\7\2\u009e\2)\3\2\2")
+        buf.write("\13\f\3\2\t\n\4\2\21\21\24\25\3\2\6\7\2\u009e\2)\3\2\2")
         buf.write("\2\4,\3\2\2\2\6\61\3\2\2\2\b\67\3\2\2\2\n;\3\2\2\2\fG")
         buf.write("\3\2\2\2\16M\3\2\2\2\20O\3\2\2\2\22R\3\2\2\2\24W\3\2\2")
         buf.write("\2\26q\3\2\2\2\30\u0081\3\2\2\2\32\u0085\3\2\2\2\34\u0087")
         buf.write("\3\2\2\2\36\u008a\3\2\2\2 \u0093\3\2\2\2\"\u009b\3\2\2")
         buf.write("\2$\u009d\3\2\2\2&(\5\4\3\2\'&\3\2\2\2(+\3\2\2\2)\'\3")
-        buf.write("\2\2\2)*\3\2\2\2*\3\3\2\2\2+)\3\2\2\2,-\5\6\4\2-.\7\21")
-        buf.write("\2\2./\5\f\7\2/\60\7\22\2\2\60\5\3\2\2\2\61\62\5$\23\2")
+        buf.write("\2\2\2)*\3\2\2\2*\3\3\2\2\2+)\3\2\2\2,-\5\6\4\2-.\7\22")
+        buf.write("\2\2./\5\f\7\2/\60\7\23\2\2\60\5\3\2\2\2\61\62\5$\23\2")
         buf.write("\62\63\7\b\2\2\63\64\7\r\2\2\64\65\5\n\6\2\65\66\7\16")
         buf.write("\2\2\66\7\3\2\2\2\678\5$\23\289\7\b\2\29\t\3\2\2\2:<\5")
         buf.write("\b\5\2;:\3\2\2\2;<\3\2\2\2<A\3\2\2\2=>\7\3\2\2>@\5\b\5")
@@ -41,13 +41,13 @@ def serializedATN():
         buf.write("\5\24\13\2MJ\3\2\2\2MK\3\2\2\2ML\3\2\2\2N\17\3\2\2\2O")
         buf.write("P\7\4\2\2PQ\5\26\f\2Q\21\3\2\2\2RS\5$\23\2ST\7\b\2\2T")
         buf.write("U\7\20\2\2UV\5\26\f\2V\23\3\2\2\2WX\7\5\2\2XY\7\r\2\2")
-        buf.write("YZ\5\30\r\2Z[\7\16\2\2[_\7\21\2\2\\^\5\16\b\2]\\\3\2\2")
+        buf.write("YZ\5\30\r\2Z[\7\16\2\2[_\7\22\2\2\\^\5\16\b\2]\\\3\2\2")
         buf.write("\2^a\3\2\2\2_]\3\2\2\2_`\3\2\2\2`b\3\2\2\2a_\3\2\2\2b")
-        buf.write("c\7\22\2\2c\25\3\2\2\2de\b\f\1\2er\5 \21\2fg\7\r\2\2g")
+        buf.write("c\7\23\2\2c\25\3\2\2\2de\b\f\1\2er\5 \21\2fg\7\r\2\2g")
         buf.write("h\5\26\f\2hi\7\16\2\2ir\3\2\2\2jl\t\2\2\2kj\3\2\2\2lo")
         buf.write("\3\2\2\2mk\3\2\2\2mn\3\2\2\2np\3\2\2\2om\3\2\2\2pr\5\"")
-        buf.write("\22\2qd\3\2\2\2qf\3\2\2\2qm\3\2\2\2r~\3\2\2\2st\f\b\2")
-        buf.write("\2tu\7\17\2\2u}\5\26\f\tvw\f\6\2\2wx\t\3\2\2x}\5\26\f")
+        buf.write("\22\2qd\3\2\2\2qf\3\2\2\2qm\3\2\2\2r~\3\2\2\2st\f\7\2")
+        buf.write("\2tu\7\17\2\2u}\5\26\f\bvw\f\6\2\2wx\t\3\2\2x}\5\26\f")
         buf.write("\7yz\f\5\2\2z{\t\2\2\2{}\5\26\f\6|s\3\2\2\2|v\3\2\2\2")
         buf.write("|y\3\2\2\2}\u0080\3\2\2\2~|\3\2\2\2~\177\3\2\2\2\177\27")
         buf.write("\3\2\2\2\u0080~\3\2\2\2\u0081\u0082\5\26\f\2\u0082\u0083")
@@ -59,8 +59,8 @@ def serializedATN():
         buf.write("\u0092\3\2\2\2\u0090\u008e\3\2\2\2\u0090\u0091\3\2\2\2")
         buf.write("\u0091\37\3\2\2\2\u0092\u0090\3\2\2\2\u0093\u0094\7\b")
         buf.write("\2\2\u0094\u0095\7\r\2\2\u0095\u0096\5\36\20\2\u0096\u0097")
-        buf.write("\7\16\2\2\u0097!\3\2\2\2\u0098\u009c\7\25\2\2\u0099\u009c")
-        buf.write("\7\26\2\2\u009a\u009c\7\b\2\2\u009b\u0098\3\2\2\2\u009b")
+        buf.write("\7\16\2\2\u0097!\3\2\2\2\u0098\u009c\7\26\2\2\u0099\u009c")
+        buf.write("\7\27\2\2\u009a\u009c\7\b\2\2\u009b\u0098\3\2\2\2\u009b")
         buf.write("\u0099\3\2\2\2\u009b\u009a\3\2\2\2\u009c#\3\2\2\2\u009d")
         buf.write("\u009e\t\5\2\2\u009e%\3\2\2\2\17);AGM_mq|~\u008a\u0090")
         buf.write("\u009b")
@@ -79,13 +79,13 @@ class CodeParser ( Parser ):
 
     literalNames = [ "<INVALID>", "','", "'return'", "'if'", "'int'", "'double'", 
                      "<INVALID>", "'*'", "'/'", "'+'", "'-'", "'('", "')'", 
-                     "'^'", "'='", "'{'", "'}'", "'>'", "'<'" ]
+                     "'^'", "'='", "'=='", "'{'", "'}'", "'>'", "'<'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "ID", "TIMES", "DIV", "PLUS", 
-                      "MINUS", "LPAREN", "RPAREN", "POW", "EQ", "LBRACE", 
-                      "RBRACE", "GT", "LT", "INT", "DECIMAL", "WS", "COMMENT", 
-                      "LINE_COMMENT" ]
+                      "MINUS", "LPAREN", "RPAREN", "POW", "EQ", "EQ_EQ", 
+                      "LBRACE", "RBRACE", "GT", "LT", "INT", "DECIMAL", 
+                      "WS", "COMMENT", "LINE_COMMENT" ]
 
     RULE_program = 0
     RULE_function = 1
@@ -126,15 +126,16 @@ class CodeParser ( Parser ):
     RPAREN=12
     POW=13
     EQ=14
-    LBRACE=15
-    RBRACE=16
-    GT=17
-    LT=18
-    INT=19
-    DECIMAL=20
-    WS=21
-    COMMENT=22
-    LINE_COMMENT=23
+    EQ_EQ=15
+    LBRACE=16
+    RBRACE=17
+    GT=18
+    LT=19
+    INT=20
+    DECIMAL=21
+    WS=22
+    COMMENT=23
+    LINE_COMMENT=24
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -1063,13 +1064,13 @@ class CodeParser ( Parser ):
                         localctx = CodeParser.ExpressionPowContext(self, CodeParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 113
-                        if not self.precpred(self._ctx, 6):
+                        if not self.precpred(self._ctx, 5):
                             from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
                         self.state = 114
                         localctx.op = self.match(CodeParser.POW)
                         self.state = 115
-                        self.expression(7)
+                        self.expression(6)
                         pass
 
                     elif la_ == 2:
@@ -1189,8 +1190,8 @@ class CodeParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def EQ(self):
-            return self.getToken(CodeParser.EQ, 0)
+        def EQ_EQ(self):
+            return self.getToken(CodeParser.EQ_EQ, 0)
 
         def GT(self):
             return self.getToken(CodeParser.GT, 0)
@@ -1227,7 +1228,7 @@ class CodeParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 131
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CodeParser.EQ) | (1 << CodeParser.GT) | (1 << CodeParser.LT))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CodeParser.EQ_EQ) | (1 << CodeParser.GT) | (1 << CodeParser.LT))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1553,7 +1554,7 @@ class CodeParser ( Parser ):
 
     def expression_sempred(self, localctx:ExpressionContext, predIndex:int):
             if predIndex == 0:
-                return self.precpred(self._ctx, 6)
+                return self.precpred(self._ctx, 5)
          
 
             if predIndex == 1:

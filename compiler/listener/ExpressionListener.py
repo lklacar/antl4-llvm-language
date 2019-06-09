@@ -22,12 +22,12 @@ class ExpressionListener(CodeListener):
 
         params = []
         for param in ctx.functionCall().params().param():
-            listener = ExpressionListener(self.builder, self.context)
-            walker = ParseTreeWalker()
-            walker.walk(listener, param.expression())
-            expression_result = listener.stack.pop()
-            params.append(expression_result)
-            self.stack.pop()
+        #     listener = ExpressionListener(self.builder, self.context)
+        #     walker = ParseTreeWalker()
+        #     walker.walk(listener, param.expression())
+        #     expression_result = listener.stack.pop()
+            params.append(self.stack.pop())
+        #     self.stack.pop()
 
         self.stack.append(self.builder.call(callee_function, params))
 
@@ -50,18 +50,18 @@ class ExpressionListener(CodeListener):
             raise Exception("Cannot convert {} and {} to the same type".format(left, right))
 
         if ctx.op.text == "+":
-            self.stack.append(add_function(left, right))
+            self.stack.append(add_function(right, left))
         elif ctx.op.text == "-":
-            self.stack.append(sub_function(left, right))
+            self.stack.append(sub_function(right, left))
 
     def exitExpressionMul(self, ctx: CodeParser.ExpressionAddContext):
         left = self.stack.pop()
         right = self.stack.pop()
 
         if ctx.op.text == "*":
-            self.stack.append(self.builder.mul(left, right))
+            self.stack.append(self.builder.mul(right, left))
         elif ctx.op.text == "/":
-            self.stack.append(self.builder.udiv(left, right))
+            self.stack.append(self.builder.udiv(right, left))
 
     def enterAtom(self, ctx: CodeParser.AtomContext):
         t = ctx.op.type

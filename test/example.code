@@ -1,13 +1,18 @@
 
+int fibbonacci(int n) {
+   if(n < 1){
+      return 0
+   }
+
+   if(n == 1) {
+      return 1
+   }
+
+    int a = n - 1;
+    int b = n - 2
+    return fibbonacci(n-1) + fibbonacci(n-2)
+}
+
 int start() {
-
-    if(1 > 3) {
-        return 5
-    }
-
-    if (5 < 44) {
-        return 3
-    }
-
-    return 1
+    return fibbonacci(10)
 }

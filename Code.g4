@@ -24,8 +24,8 @@ assignmentStatement: type ID EQ expression;
 ifStatement: 'if' LPAREN equation RPAREN LBRACE (statement)* RBRACE;
 
 expression
-   :  expression op=POW expression            #expressionPow
-   |  functionCall                            #expressionFunctionCall
+   :  functionCall                            #expressionFunctionCall
+   |  expression op=POW expression            #expressionPow
    |  expression op=(TIMES | DIV)  expression #expressionMul
    |  expression op=(PLUS | MINUS) expression #expressionAdd
    |  LPAREN expression RPAREN                #expressionNested
@@ -38,11 +38,11 @@ equation
    ;
 
 relop
-   : EQ
+   : EQ_EQ
    | GT
    | LT
    ;
-   
+
 param: expression;
 params: param? (',' param)*;
 
@@ -69,13 +69,14 @@ LPAREN: '(';
 RPAREN: ')';
 POW: '^';
 EQ: '=';
+EQ_EQ: '==';
 LBRACE: '{';
 RBRACE: '}';
 
 GT: '>';
 LT: '<';
 
-INT: SIGN DIGIT+;
+INT: DIGIT+;
 DECIMAL: INT '.' INT;
 
 fragment DIGIT: [0-9];
