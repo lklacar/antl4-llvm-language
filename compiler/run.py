@@ -42,10 +42,10 @@ def generate_object_file(module):
     llvm.initialize_native_asmprinter()
     target = llvm.Target.from_default_triple()
 
-    target_machine = target.create_target_machine(opt=0)
+    target_machine = target.create_target_machine(opt=3)
     module_ref = llvm.parse_assembly(str(module))
 
-    # optimize(module_ref)
+    optimize(module_ref)
 
     obj = target_machine.emit_object(module_ref)
 
