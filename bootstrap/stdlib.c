@@ -1,6 +1,6 @@
 #define SYSCALL_WRITE 1
 
-int __print(unsigned fd, const char *buf, unsigned count) {
+int print(unsigned fd, const char *buf, unsigned count) {
     unsigned ret;
 
     asm volatile
@@ -14,17 +14,17 @@ int __print(unsigned fd, const char *buf, unsigned count) {
     return ret;
 }
 
-int __stringlength(const char *p) {
+int stringlength(const char *p) {
     const char *start = p;
     while (*p) p++;
     return (p - start);
 }
 
-int __reverse(char s[]) {
+int reverse(char s[]) {
     int i, j;
     char c;
 
-    for (i = 0, j = __stringlength(s) - 1; i < j; i++, j--) {
+    for (i = 0, j = stringlength(s) - 1; i < j; i++, j--) {
         c = s[i];
         s[i] = s[j];
         s[j] = c;
@@ -33,7 +33,7 @@ int __reverse(char s[]) {
     return 0;
 }
 
-int __itoa(int n, char s[]) {
+int itoa(int n, char s[]) {
     int i, sign;
 
     if ((sign = n) < 0)
@@ -45,14 +45,14 @@ int __itoa(int n, char s[]) {
     if (sign < 0)
         s[i++] = '-';
     s[i] = '\0';
-    __reverse(s);
+    reverse(s);
 
     return 0;
 }
 
 int printint(int i) {
     char str[20];
-    __itoa(i, str);
-    __print(1, str, __stringlength(str));
+    itoa(i, str);
+    print(1, str, stringlength(str));
     return 0;
 }
