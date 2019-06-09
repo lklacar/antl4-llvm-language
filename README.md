@@ -35,19 +35,20 @@ objdump -d ./out/evaluate.o
 
 ```c
 
-int add(int b, int c, int d) {
-    return b+c+d
-}
+int fibbonacci(int n) {
+   if(n == 0){
+      return 0
+   }
+   
+   if(n == 1) {
+      return 1
+   }
 
-int complexExpression(int a, int b, int c) {
-    int d = 100;
-    return a + b + (a + d) * b
+    return fibbonacci(n-1) + fibbonacci(n-2)
 }
 
 int start() {
-    int c = add(1,2,3)
-    int d = complexExpression(3,2,1)
-    return c + d
+    return fibbonacci(10)
 }
 ```
 

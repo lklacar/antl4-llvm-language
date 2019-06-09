@@ -1,6 +1,6 @@
 
 int fibbonacci(int n) {
-   if(n < 1){
+   if(n == 0){
       return 0
    }
 
@@ -8,8 +8,6 @@ int fibbonacci(int n) {
       return 1
    }
 
-    int a = n - 1;
-    int b = n - 2
     return fibbonacci(n-1) + fibbonacci(n-2)
 }
 
