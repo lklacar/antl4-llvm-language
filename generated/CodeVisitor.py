@@ -54,6 +54,11 @@ class CodeVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by CodeParser#ifStatement.
+    def visitIfStatement(self, ctx:CodeParser.IfStatementContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by CodeParser#expressionAdd.
     def visitExpressionAdd(self, ctx:CodeParser.ExpressionAddContext):
         return self.visitChildren(ctx)
@@ -81,6 +86,16 @@ class CodeVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by CodeParser#expressionPow.
     def visitExpressionPow(self, ctx:CodeParser.ExpressionPowContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CodeParser#equation.
+    def visitEquation(self, ctx:CodeParser.EquationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CodeParser#relop.
+    def visitRelop(self, ctx:CodeParser.RelopContext):
         return self.visitChildren(ctx)
 
 

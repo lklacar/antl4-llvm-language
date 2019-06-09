@@ -14,11 +14,14 @@ functionBody: (statement)*;
 statement
     : assignmentStatement
     | returnStatement
+    | ifStatement
     ;
 
 returnStatement: 'return' expression;
 
 assignmentStatement: type ID EQ expression;
+
+ifStatement: 'if' LPAREN equation RPAREN LBRACE (statement)* RBRACE;
 
 expression
    :  expression op=POW expression            #expressionPow
@@ -30,6 +33,16 @@ expression
    ;
 
 
+equation
+   : expression op=relop expression
+   ;
+
+relop
+   : EQ
+   | GT
+   | LT
+   ;
+   
 param: expression;
 params: param? (',' param)*;
 
@@ -58,6 +71,9 @@ POW: '^';
 EQ: '=';
 LBRACE: '{';
 RBRACE: '}';
+
+GT: '>';
+LT: '<';
 
 INT: SIGN DIGIT+;
 DECIMAL: INT '.' INT;
