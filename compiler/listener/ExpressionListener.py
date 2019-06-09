@@ -27,6 +27,7 @@ class ExpressionListener(CodeListener):
             walker.walk(listener, param.expression())
             expression_result = listener.stack.pop()
             params.append(expression_result)
+            self.stack.pop()
 
         self.stack.append(self.builder.call(callee_function, params))
 
