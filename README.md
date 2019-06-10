@@ -38,7 +38,7 @@ objdump -d ./out/evaluate.o
 ```c
 
 int fibbonacci(int n) {
-   if(n == 0){
+   if(n == 0) {
       return 0
    }
    
