@@ -10,6 +10,9 @@ class ExpressionListener(CodeListener):
         self.t = t
         self.stack = []
 
+    def exitExpressionEquation(self, ctx:CodeParser.ExpressionEquationContext):
+        print("A")
+
     def exitExpressionFunctionCall(self, ctx: CodeParser.ExpressionFunctionCallContext):
         function_name = ctx.functionCall().ID().getText()
         function = self.builder.module.get_global(function_name)

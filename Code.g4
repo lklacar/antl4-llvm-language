@@ -9,7 +9,13 @@ moduleDefinition: 'module' ID SEMI;
 statement
     : assignmentStatement
     | returnStatement
+    | ifStatement
     ;
+
+ifStatement
+    : 'if' expression LBRACKET functionBody RBRACKET
+    ;
+
 
 assignmentStatement
     : assignmentType ID ':' type EQ expression SEMI
@@ -43,11 +49,12 @@ functionCall
     ;
 
 expression
-   : functionCall                            #expressionFunctionCall
-   | expression op=(MUL | DIV)  expression   #expressionMul
-   | expression op=(PLUS | MINUS) expression #expressionAdd
-   | LPAREN expression RPAREN                #expressionNested
-   | (PLUS | MINUS)* atom                    #expressionNumber
+   : functionCall                                                       #expressionFunctionCall
+   | expression op=(MUL | DIV)  expression                              #expressionMul
+   | expression op=(PLUS | MINUS) expression                            #expressionAdd
+   | LPAREN expression RPAREN                                           #expressionNested
+   | expression  op=(LT | GT | EQ_EQ | GT_EQ | LT_EQ) expression        #expressionEquation
+   | (PLUS | MINUS)* atom                                               #expressionNumber
    ;
 
 atom
@@ -108,6 +115,11 @@ EQ: '=';
 LBRACKET: '{';
 RBRACKET: '}';
 SEMI: ';';
+LT: '<';
+GT: '>';
+EQ_EQ: '==';
+LT_EQ: '<=';
+GT_EQ: '>=';
 
 WS
    : [ \r\n\t] + -> skip

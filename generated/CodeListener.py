@@ -35,6 +35,15 @@ class CodeListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CodeParser#ifStatement.
+    def enterIfStatement(self, ctx:CodeParser.IfStatementContext):
+        pass
+
+    # Exit a parse tree produced by CodeParser#ifStatement.
+    def exitIfStatement(self, ctx:CodeParser.IfStatementContext):
+        pass
+
+
     # Enter a parse tree produced by CodeParser#assignmentStatement.
     def enterAssignmentStatement(self, ctx:CodeParser.AssignmentStatementContext):
         pass
@@ -104,6 +113,15 @@ class CodeListener(ParseTreeListener):
 
     # Exit a parse tree produced by CodeParser#expressionAdd.
     def exitExpressionAdd(self, ctx:CodeParser.ExpressionAddContext):
+        pass
+
+
+    # Enter a parse tree produced by CodeParser#expressionEquation.
+    def enterExpressionEquation(self, ctx:CodeParser.ExpressionEquationContext):
+        pass
+
+    # Exit a parse tree produced by CodeParser#expressionEquation.
+    def exitExpressionEquation(self, ctx:CodeParser.ExpressionEquationContext):
         pass
 
 

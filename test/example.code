@@ -1,10 +1,12 @@
 module Example;
 
-fn add(a: i32, b:i32) -> i32 {
-    ret a+b;
-}
 
 fn main(a: i32) -> i32 {
 
-    ret printint(add(1,2));
+    if 5 > 2 {
+        const a:i32 = printint(1);
+    }
+
+    ret 1;
+
 }
