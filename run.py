@@ -2,7 +2,7 @@ import sys
 
 from antlr4 import *
 
-from compiler.generator.CodeGenerator import CodeGenerator
+from compiler.listener.ProgramListener import ProgramListener
 from generated.CodeLexer import CodeLexer
 from generated.CodeParser import CodeParser
 
@@ -14,9 +14,10 @@ def main(argv):
     parser = CodeParser(stream)
     tree = parser.program()
 
-    code_generator = CodeGenerator(
-        tree
-    )
+    printer = ProgramListener()
+    walker = ParseTreeWalker()
+    walker.walk(printer, tree)
+
 
 if __name__ == '__main__':
     main(sys.argv)

@@ -17,6 +17,15 @@ class CodeListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CodeParser#moduleDefinition.
+    def enterModuleDefinition(self, ctx:CodeParser.ModuleDefinitionContext):
+        pass
+
+    # Exit a parse tree produced by CodeParser#moduleDefinition.
+    def exitModuleDefinition(self, ctx:CodeParser.ModuleDefinitionContext):
+        pass
+
+
     # Enter a parse tree produced by CodeParser#statement.
     def enterStatement(self, ctx:CodeParser.StatementContext):
         pass
@@ -41,6 +50,15 @@ class CodeListener(ParseTreeListener):
 
     # Exit a parse tree produced by CodeParser#functionDefinition.
     def exitFunctionDefinition(self, ctx:CodeParser.FunctionDefinitionContext):
+        pass
+
+
+    # Enter a parse tree produced by CodeParser#functionBody.
+    def enterFunctionBody(self, ctx:CodeParser.FunctionBodyContext):
+        pass
+
+    # Exit a parse tree produced by CodeParser#functionBody.
+    def exitFunctionBody(self, ctx:CodeParser.FunctionBodyContext):
         pass
 
 
@@ -104,6 +122,15 @@ class CodeListener(ParseTreeListener):
 
     # Exit a parse tree produced by CodeParser#assignmentType.
     def exitAssignmentType(self, ctx:CodeParser.AssignmentTypeContext):
+        pass
+
+
+    # Enter a parse tree produced by CodeParser#type.
+    def enterType(self, ctx:CodeParser.TypeContext):
+        pass
+
+    # Exit a parse tree produced by CodeParser#type.
+    def exitType(self, ctx:CodeParser.TypeContext):
         pass
 
 

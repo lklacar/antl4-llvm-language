@@ -1,7 +1,7 @@
 
+module Example;
 
-
-fn main(argc:i8) -> i32 {
+fn main(argc:i8, a:i8) -> i32 {
 
     const a : i32 = 5;
 

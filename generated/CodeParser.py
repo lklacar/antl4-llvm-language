@@ -8,39 +8,44 @@ import sys
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\30")
-        buf.write("f\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
-        buf.write("\t\b\4\t\t\t\3\2\7\2\24\n\2\f\2\16\2\27\13\2\3\3\3\3\3")
-        buf.write("\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\5\3\5\3\5\3\5\5\5\'\n")
-        buf.write("\5\3\5\3\5\3\5\5\5,\n\5\3\5\3\5\3\5\7\5\61\n\5\f\5\16")
-        buf.write("\5\64\13\5\3\5\3\5\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6")
-        buf.write("\3\6\7\6B\n\6\f\6\16\6E\13\6\3\7\3\7\3\7\3\7\3\7\3\7\7")
-        buf.write("\7M\n\7\f\7\16\7P\13\7\3\7\5\7S\n\7\3\7\3\7\3\7\3\7\3")
-        buf.write("\7\3\7\7\7[\n\7\f\7\16\7^\13\7\3\b\3\b\5\bb\n\b\3\t\3")
-        buf.write("\t\3\t\2\4\n\f\n\2\4\6\b\n\f\16\20\2\5\3\2\20\21\3\2\16")
-        buf.write("\17\3\2\7\b\2h\2\25\3\2\2\2\4\30\3\2\2\2\6\32\3\2\2\2")
-        buf.write("\b\"\3\2\2\2\n\67\3\2\2\2\fR\3\2\2\2\16a\3\2\2\2\20c\3")
-        buf.write("\2\2\2\22\24\5\b\5\2\23\22\3\2\2\2\24\27\3\2\2\2\25\23")
-        buf.write("\3\2\2\2\25\26\3\2\2\2\26\3\3\2\2\2\27\25\3\2\2\2\30\31")
-        buf.write("\5\6\4\2\31\5\3\2\2\2\32\33\5\20\t\2\33\34\7\n\2\2\34")
-        buf.write("\35\7\3\2\2\35\36\7\t\2\2\36\37\7\22\2\2\37 \5\f\7\2 ")
-        buf.write("!\7\25\2\2!\7\3\2\2\2\"#\7\4\2\2#$\7\n\2\2$&\7\f\2\2%")
-        buf.write("\'\5\n\6\2&%\3\2\2\2&\'\3\2\2\2\'(\3\2\2\2(+\7\r\2\2)")
-        buf.write("*\7\5\2\2*,\7\t\2\2+)\3\2\2\2+,\3\2\2\2,-\3\2\2\2-\62")
-        buf.write("\7\23\2\2.\61\5\4\3\2/\61\5\f\7\2\60.\3\2\2\2\60/\3\2")
-        buf.write("\2\2\61\64\3\2\2\2\62\60\3\2\2\2\62\63\3\2\2\2\63\65\3")
-        buf.write("\2\2\2\64\62\3\2\2\2\65\66\7\24\2\2\66\t\3\2\2\2\678\b")
-        buf.write("\6\1\289\7\n\2\29:\7\3\2\2:;\7\t\2\2;C\3\2\2\2<=\f\3\2")
-        buf.write("\2=>\7\6\2\2>?\7\n\2\2?@\7\3\2\2@B\7\t\2\2A<\3\2\2\2B")
-        buf.write("E\3\2\2\2CA\3\2\2\2CD\3\2\2\2D\13\3\2\2\2EC\3\2\2\2FG")
-        buf.write("\b\7\1\2GH\7\f\2\2HI\5\f\7\2IJ\7\r\2\2JS\3\2\2\2KM\t\2")
-        buf.write("\2\2LK\3\2\2\2MP\3\2\2\2NL\3\2\2\2NO\3\2\2\2OQ\3\2\2\2")
-        buf.write("PN\3\2\2\2QS\5\16\b\2RF\3\2\2\2RN\3\2\2\2S\\\3\2\2\2T")
-        buf.write("U\f\6\2\2UV\t\3\2\2V[\5\f\7\7WX\f\5\2\2XY\t\2\2\2Y[\5")
-        buf.write("\f\7\6ZT\3\2\2\2ZW\3\2\2\2[^\3\2\2\2\\Z\3\2\2\2\\]\3\2")
-        buf.write("\2\2]\r\3\2\2\2^\\\3\2\2\2_b\7\13\2\2`b\7\n\2\2a_\3\2")
-        buf.write("\2\2a`\3\2\2\2b\17\3\2\2\2cd\t\4\2\2d\21\3\2\2\2\r\25")
-        buf.write("&+\60\62CNRZ\\a")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\34")
+        buf.write("x\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
+        buf.write("\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\3\2\3\2\7\2\33")
+        buf.write("\n\2\f\2\16\2\36\13\2\3\3\3\3\3\3\3\3\3\4\3\4\3\5\3\5")
+        buf.write("\3\5\3\5\3\5\3\5\3\5\3\5\3\6\3\6\3\6\3\6\5\6\62\n\6\3")
+        buf.write("\6\3\6\3\6\5\6\67\n\6\3\6\3\6\5\6;\n\6\3\6\3\6\3\7\3\7")
+        buf.write("\6\7A\n\7\r\7\16\7B\3\7\5\7F\n\7\3\b\3\b\3\b\3\b\3\b\3")
+        buf.write("\b\3\b\3\b\3\b\3\b\7\bR\n\b\f\b\16\bU\13\b\3\t\3\t\3\t")
+        buf.write("\3\t\3\t\3\t\7\t]\n\t\f\t\16\t`\13\t\3\t\5\tc\n\t\3\t")
+        buf.write("\3\t\3\t\3\t\3\t\3\t\7\tk\n\t\f\t\16\tn\13\t\3\n\3\n\5")
+        buf.write("\nr\n\n\3\13\3\13\3\f\3\f\3\f\2\4\16\20\r\2\4\6\b\n\f")
+        buf.write("\16\20\22\24\26\2\6\3\2\24\25\3\2\22\23\3\2\b\t\3\2\n")
+        buf.write("\r\2y\2\30\3\2\2\2\4\37\3\2\2\2\6#\3\2\2\2\b%\3\2\2\2")
+        buf.write("\n-\3\2\2\2\fE\3\2\2\2\16G\3\2\2\2\20b\3\2\2\2\22q\3\2")
+        buf.write("\2\2\24s\3\2\2\2\26u\3\2\2\2\30\34\5\4\3\2\31\33\5\n\6")
+        buf.write("\2\32\31\3\2\2\2\33\36\3\2\2\2\34\32\3\2\2\2\34\35\3\2")
+        buf.write("\2\2\35\3\3\2\2\2\36\34\3\2\2\2\37 \7\3\2\2 !\7\16\2\2")
+        buf.write("!\"\7\31\2\2\"\5\3\2\2\2#$\5\b\5\2$\7\3\2\2\2%&\5\24\13")
+        buf.write("\2&\'\7\16\2\2\'(\7\4\2\2()\5\26\f\2)*\7\26\2\2*+\5\20")
+        buf.write("\t\2+,\7\31\2\2,\t\3\2\2\2-.\7\5\2\2./\7\16\2\2/\61\7")
+        buf.write("\20\2\2\60\62\5\16\b\2\61\60\3\2\2\2\61\62\3\2\2\2\62")
+        buf.write("\63\3\2\2\2\63\66\7\21\2\2\64\65\7\6\2\2\65\67\5\26\f")
+        buf.write("\2\66\64\3\2\2\2\66\67\3\2\2\2\678\3\2\2\28:\7\27\2\2")
+        buf.write("9;\5\f\7\2:9\3\2\2\2:;\3\2\2\2;<\3\2\2\2<=\7\30\2\2=\13")
+        buf.write("\3\2\2\2>A\5\6\4\2?A\5\20\t\2@>\3\2\2\2@?\3\2\2\2AB\3")
+        buf.write("\2\2\2B@\3\2\2\2BC\3\2\2\2CF\3\2\2\2DF\3\2\2\2E@\3\2\2")
+        buf.write("\2ED\3\2\2\2F\r\3\2\2\2GH\b\b\1\2HI\7\16\2\2IJ\7\4\2\2")
+        buf.write("JK\5\26\f\2KS\3\2\2\2LM\f\3\2\2MN\7\7\2\2NO\7\16\2\2O")
+        buf.write("P\7\4\2\2PR\5\26\f\2QL\3\2\2\2RU\3\2\2\2SQ\3\2\2\2ST\3")
+        buf.write("\2\2\2T\17\3\2\2\2US\3\2\2\2VW\b\t\1\2WX\7\20\2\2XY\5")
+        buf.write("\20\t\2YZ\7\21\2\2Zc\3\2\2\2[]\t\2\2\2\\[\3\2\2\2]`\3")
+        buf.write("\2\2\2^\\\3\2\2\2^_\3\2\2\2_a\3\2\2\2`^\3\2\2\2ac\5\22")
+        buf.write("\n\2bV\3\2\2\2b^\3\2\2\2cl\3\2\2\2de\f\6\2\2ef\t\3\2\2")
+        buf.write("fk\5\20\t\7gh\f\5\2\2hi\t\2\2\2ik\5\20\t\6jd\3\2\2\2j")
+        buf.write("g\3\2\2\2kn\3\2\2\2lj\3\2\2\2lm\3\2\2\2m\21\3\2\2\2nl")
+        buf.write("\3\2\2\2or\7\17\2\2pr\7\16\2\2qo\3\2\2\2qp\3\2\2\2r\23")
+        buf.write("\3\2\2\2st\t\4\2\2t\25\3\2\2\2uv\t\5\2\2v\27\3\2\2\2\17")
+        buf.write("\34\61\66:@BES^bjlq")
         return buf.getvalue()
 
 
@@ -54,28 +59,33 @@ class CodeParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "':'", "'fn'", "'->'", "','", "'const'", 
-                     "'let'", "<INVALID>", "<INVALID>", "<INVALID>", "'('", 
-                     "')'", "'*'", "'/'", "'+'", "'-'", "'='", "'{'", "'}'", 
-                     "';'" ]
+    literalNames = [ "<INVALID>", "'module'", "':'", "'fn'", "'->'", "','", 
+                     "'const'", "'let'", "'i32'", "'i16'", "'i8'", "'double'", 
+                     "<INVALID>", "<INVALID>", "'('", "')'", "'*'", "'/'", 
+                     "'+'", "'-'", "'='", "'{'", "'}'", "';'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "TYPE", "ID", 
-                      "Constant", "LPAREN", "RPAREN", "MUL", "DIV", "PLUS", 
-                      "MINUS", "EQ", "LBRACKET", "RBRACKET", "SEMI", "WS", 
-                      "COMMENT", "LINE_COMMENT" ]
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "ID", "Constant", "LPAREN", "RPAREN", "MUL", "DIV", 
+                      "PLUS", "MINUS", "EQ", "LBRACKET", "RBRACKET", "SEMI", 
+                      "WS", "COMMENT", "LINE_COMMENT" ]
 
     RULE_program = 0
-    RULE_statement = 1
-    RULE_assignmentStatement = 2
-    RULE_functionDefinition = 3
-    RULE_arguments = 4
-    RULE_expression = 5
-    RULE_atom = 6
-    RULE_assignmentType = 7
+    RULE_moduleDefinition = 1
+    RULE_statement = 2
+    RULE_assignmentStatement = 3
+    RULE_functionDefinition = 4
+    RULE_functionBody = 5
+    RULE_arguments = 6
+    RULE_expression = 7
+    RULE_atom = 8
+    RULE_assignmentType = 9
+    RULE_type = 10
 
-    ruleNames =  [ "program", "statement", "assignmentStatement", "functionDefinition", 
-                   "arguments", "expression", "atom", "assignmentType" ]
+    ruleNames =  [ "program", "moduleDefinition", "statement", "assignmentStatement", 
+                   "functionDefinition", "functionBody", "arguments", "expression", 
+                   "atom", "assignmentType", "type" ]
 
     EOF = Token.EOF
     T__0=1
@@ -84,22 +94,26 @@ class CodeParser ( Parser ):
     T__3=4
     T__4=5
     T__5=6
-    TYPE=7
-    ID=8
-    Constant=9
-    LPAREN=10
-    RPAREN=11
-    MUL=12
-    DIV=13
-    PLUS=14
-    MINUS=15
-    EQ=16
-    LBRACKET=17
-    RBRACKET=18
-    SEMI=19
-    WS=20
-    COMMENT=21
-    LINE_COMMENT=22
+    T__6=7
+    T__7=8
+    T__8=9
+    T__9=10
+    T__10=11
+    ID=12
+    Constant=13
+    LPAREN=14
+    RPAREN=15
+    MUL=16
+    DIV=17
+    PLUS=18
+    MINUS=19
+    EQ=20
+    LBRACKET=21
+    RBRACKET=22
+    SEMI=23
+    WS=24
+    COMMENT=25
+    LINE_COMMENT=26
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -115,6 +129,10 @@ class CodeParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+
+        def moduleDefinition(self):
+            return self.getTypedRuleContext(CodeParser.ModuleDefinitionContext,0)
+
 
         def functionDefinition(self, i:int=None):
             if i is None:
@@ -144,16 +162,65 @@ class CodeParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 19
+            self.state = 22
+            self.moduleDefinition()
+            self.state = 26
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==CodeParser.T__1:
-                self.state = 16
+            while _la==CodeParser.T__2:
+                self.state = 23
                 self.functionDefinition()
-                self.state = 21
+                self.state = 28
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ModuleDefinitionContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def ID(self):
+            return self.getToken(CodeParser.ID, 0)
+
+        def SEMI(self):
+            return self.getToken(CodeParser.SEMI, 0)
+
+        def getRuleIndex(self):
+            return CodeParser.RULE_moduleDefinition
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterModuleDefinition" ):
+                listener.enterModuleDefinition(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitModuleDefinition" ):
+                listener.exitModuleDefinition(self)
+
+
+
+
+    def moduleDefinition(self):
+
+        localctx = CodeParser.ModuleDefinitionContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 2, self.RULE_moduleDefinition)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 29
+            self.match(CodeParser.T__0)
+            self.state = 30
+            self.match(CodeParser.ID)
+            self.state = 31
+            self.match(CodeParser.SEMI)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -190,10 +257,10 @@ class CodeParser ( Parser ):
     def statement(self):
 
         localctx = CodeParser.StatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 2, self.RULE_statement)
+        self.enterRule(localctx, 4, self.RULE_statement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 22
+            self.state = 33
             self.assignmentStatement()
         except RecognitionException as re:
             localctx.exception = re
@@ -217,8 +284,9 @@ class CodeParser ( Parser ):
         def ID(self):
             return self.getToken(CodeParser.ID, 0)
 
-        def TYPE(self):
-            return self.getToken(CodeParser.TYPE, 0)
+        def type(self):
+            return self.getTypedRuleContext(CodeParser.TypeContext,0)
+
 
         def EQ(self):
             return self.getToken(CodeParser.EQ, 0)
@@ -247,22 +315,22 @@ class CodeParser ( Parser ):
     def assignmentStatement(self):
 
         localctx = CodeParser.AssignmentStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 4, self.RULE_assignmentStatement)
+        self.enterRule(localctx, 6, self.RULE_assignmentStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 24
+            self.state = 35
             self.assignmentType()
-            self.state = 25
+            self.state = 36
             self.match(CodeParser.ID)
-            self.state = 26
-            self.match(CodeParser.T__0)
-            self.state = 27
-            self.match(CodeParser.TYPE)
-            self.state = 28
+            self.state = 37
+            self.match(CodeParser.T__1)
+            self.state = 38
+            self.type()
+            self.state = 39
             self.match(CodeParser.EQ)
-            self.state = 29
+            self.state = 40
             self.expression(0)
-            self.state = 30
+            self.state = 41
             self.match(CodeParser.SEMI)
         except RecognitionException as re:
             localctx.exception = re
@@ -298,21 +366,12 @@ class CodeParser ( Parser ):
             return self.getTypedRuleContext(CodeParser.ArgumentsContext,0)
 
 
-        def TYPE(self):
-            return self.getToken(CodeParser.TYPE, 0)
-
-        def statement(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(CodeParser.StatementContext)
-            else:
-                return self.getTypedRuleContext(CodeParser.StatementContext,i)
+        def type(self):
+            return self.getTypedRuleContext(CodeParser.TypeContext,0)
 
 
-        def expression(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(CodeParser.ExpressionContext)
-            else:
-                return self.getTypedRuleContext(CodeParser.ExpressionContext,i)
+        def functionBody(self):
+            return self.getTypedRuleContext(CodeParser.FunctionBodyContext,0)
 
 
         def getRuleIndex(self):
@@ -332,62 +391,134 @@ class CodeParser ( Parser ):
     def functionDefinition(self):
 
         localctx = CodeParser.FunctionDefinitionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 6, self.RULE_functionDefinition)
+        self.enterRule(localctx, 8, self.RULE_functionDefinition)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 32
-            self.match(CodeParser.T__1)
-            self.state = 33
+            self.state = 43
+            self.match(CodeParser.T__2)
+            self.state = 44
             self.match(CodeParser.ID)
-            self.state = 34
+            self.state = 45
             self.match(CodeParser.LPAREN)
-            self.state = 36
+            self.state = 47
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==CodeParser.ID:
-                self.state = 35
+                self.state = 46
                 self.arguments(0)
 
 
-            self.state = 38
+            self.state = 49
             self.match(CodeParser.RPAREN)
-            self.state = 41
+            self.state = 52
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==CodeParser.T__2:
-                self.state = 39
-                self.match(CodeParser.T__2)
-                self.state = 40
-                self.match(CodeParser.TYPE)
-
-
-            self.state = 43
-            self.match(CodeParser.LBRACKET)
-            self.state = 48
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CodeParser.T__4) | (1 << CodeParser.T__5) | (1 << CodeParser.ID) | (1 << CodeParser.Constant) | (1 << CodeParser.LPAREN) | (1 << CodeParser.PLUS) | (1 << CodeParser.MINUS))) != 0):
-                self.state = 46
-                self._errHandler.sync(self)
-                token = self._input.LA(1)
-                if token in [CodeParser.T__4, CodeParser.T__5]:
-                    self.state = 44
-                    self.statement()
-                    pass
-                elif token in [CodeParser.ID, CodeParser.Constant, CodeParser.LPAREN, CodeParser.PLUS, CodeParser.MINUS]:
-                    self.state = 45
-                    self.expression(0)
-                    pass
-                else:
-                    raise NoViableAltException(self)
-
+            if _la==CodeParser.T__3:
                 self.state = 50
+                self.match(CodeParser.T__3)
+                self.state = 51
+                self.type()
+
+
+            self.state = 54
+            self.match(CodeParser.LBRACKET)
+            self.state = 56
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
+            if la_ == 1:
+                self.state = 55
+                self.functionBody()
+
+
+            self.state = 58
+            self.match(CodeParser.RBRACKET)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class FunctionBodyContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def statement(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CodeParser.StatementContext)
+            else:
+                return self.getTypedRuleContext(CodeParser.StatementContext,i)
+
+
+        def expression(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CodeParser.ExpressionContext)
+            else:
+                return self.getTypedRuleContext(CodeParser.ExpressionContext,i)
+
+
+        def getRuleIndex(self):
+            return CodeParser.RULE_functionBody
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionBody" ):
+                listener.enterFunctionBody(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionBody" ):
+                listener.exitFunctionBody(self)
+
+
+
+
+    def functionBody(self):
+
+        localctx = CodeParser.FunctionBodyContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 10, self.RULE_functionBody)
+        self._la = 0 # Token type
+        try:
+            self.state = 67
+            self._errHandler.sync(self)
+            token = self._input.LA(1)
+            if token in [CodeParser.T__5, CodeParser.T__6, CodeParser.ID, CodeParser.Constant, CodeParser.LPAREN, CodeParser.PLUS, CodeParser.MINUS]:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 62 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
+                while True:
+                    self.state = 62
+                    self._errHandler.sync(self)
+                    token = self._input.LA(1)
+                    if token in [CodeParser.T__5, CodeParser.T__6]:
+                        self.state = 60
+                        self.statement()
+                        pass
+                    elif token in [CodeParser.ID, CodeParser.Constant, CodeParser.LPAREN, CodeParser.PLUS, CodeParser.MINUS]:
+                        self.state = 61
+                        self.expression(0)
+                        pass
+                    else:
+                        raise NoViableAltException(self)
 
-            self.state = 51
-            self.match(CodeParser.RBRACKET)
+                    self.state = 64 
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
+                    if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CodeParser.T__5) | (1 << CodeParser.T__6) | (1 << CodeParser.ID) | (1 << CodeParser.Constant) | (1 << CodeParser.LPAREN) | (1 << CodeParser.PLUS) | (1 << CodeParser.MINUS))) != 0)):
+                        break
+
+                pass
+            elif token in [CodeParser.RBRACKET]:
+                self.enterOuterAlt(localctx, 2)
+
+                pass
+            else:
+                raise NoViableAltException(self)
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -406,8 +537,9 @@ class CodeParser ( Parser ):
         def ID(self):
             return self.getToken(CodeParser.ID, 0)
 
-        def TYPE(self):
-            return self.getToken(CodeParser.TYPE, 0)
+        def type(self):
+            return self.getTypedRuleContext(CodeParser.TypeContext,0)
+
 
         def arguments(self):
             return self.getTypedRuleContext(CodeParser.ArgumentsContext,0)
@@ -431,20 +563,20 @@ class CodeParser ( Parser ):
         _parentState = self.state
         localctx = CodeParser.ArgumentsContext(self, self._ctx, _parentState)
         _prevctx = localctx
-        _startState = 8
-        self.enterRecursionRule(localctx, 8, self.RULE_arguments, _p)
+        _startState = 12
+        self.enterRecursionRule(localctx, 12, self.RULE_arguments, _p)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 54
+            self.state = 70
             self.match(CodeParser.ID)
-            self.state = 55
-            self.match(CodeParser.T__0)
-            self.state = 56
-            self.match(CodeParser.TYPE)
+            self.state = 71
+            self.match(CodeParser.T__1)
+            self.state = 72
+            self.type()
             self._ctx.stop = self._input.LT(-1)
-            self.state = 65
+            self.state = 81
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,7,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
@@ -452,21 +584,21 @@ class CodeParser ( Parser ):
                     _prevctx = localctx
                     localctx = CodeParser.ArgumentsContext(self, _parentctx, _parentState)
                     self.pushNewRecursionContext(localctx, _startState, self.RULE_arguments)
-                    self.state = 58
+                    self.state = 74
                     if not self.precpred(self._ctx, 1):
                         from antlr4.error.Errors import FailedPredicateException
                         raise FailedPredicateException(self, "self.precpred(self._ctx, 1)")
-                    self.state = 59
-                    self.match(CodeParser.T__3)
-                    self.state = 60
+                    self.state = 75
+                    self.match(CodeParser.T__4)
+                    self.state = 76
                     self.match(CodeParser.ID)
-                    self.state = 61
-                    self.match(CodeParser.T__0)
-                    self.state = 62
-                    self.match(CodeParser.TYPE) 
-                self.state = 67
+                    self.state = 77
+                    self.match(CodeParser.T__1)
+                    self.state = 78
+                    self.type() 
+                self.state = 83
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,7,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -604,12 +736,12 @@ class CodeParser ( Parser ):
         _parentState = self.state
         localctx = CodeParser.ExpressionContext(self, self._ctx, _parentState)
         _prevctx = localctx
-        _startState = 10
-        self.enterRecursionRule(localctx, 10, self.RULE_expression, _p)
+        _startState = 14
+        self.enterRecursionRule(localctx, 14, self.RULE_expression, _p)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 80
+            self.state = 96
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [CodeParser.LPAREN]:
@@ -617,58 +749,58 @@ class CodeParser ( Parser ):
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 69
+                self.state = 85
                 self.match(CodeParser.LPAREN)
-                self.state = 70
+                self.state = 86
                 self.expression(0)
-                self.state = 71
+                self.state = 87
                 self.match(CodeParser.RPAREN)
                 pass
             elif token in [CodeParser.ID, CodeParser.Constant, CodeParser.PLUS, CodeParser.MINUS]:
                 localctx = CodeParser.ExpressionNumberContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 76
+                self.state = 92
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while _la==CodeParser.PLUS or _la==CodeParser.MINUS:
-                    self.state = 73
+                    self.state = 89
                     _la = self._input.LA(1)
                     if not(_la==CodeParser.PLUS or _la==CodeParser.MINUS):
                         self._errHandler.recoverInline(self)
                     else:
                         self._errHandler.reportMatch(self)
                         self.consume()
-                    self.state = 78
+                    self.state = 94
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
 
-                self.state = 79
+                self.state = 95
                 self.atom()
                 pass
             else:
                 raise NoViableAltException(self)
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 90
+            self.state = 106
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,9,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,11,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 88
+                    self.state = 104
                     self._errHandler.sync(self)
-                    la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
+                    la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
                     if la_ == 1:
                         localctx = CodeParser.ExpressionMulContext(self, CodeParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 82
+                        self.state = 98
                         if not self.precpred(self._ctx, 4):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
-                        self.state = 83
+                        self.state = 99
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
                         if not(_la==CodeParser.MUL or _la==CodeParser.DIV):
@@ -676,18 +808,18 @@ class CodeParser ( Parser ):
                         else:
                             self._errHandler.reportMatch(self)
                             self.consume()
-                        self.state = 84
+                        self.state = 100
                         self.expression(5)
                         pass
 
                     elif la_ == 2:
                         localctx = CodeParser.ExpressionAddContext(self, CodeParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 85
+                        self.state = 101
                         if not self.precpred(self._ctx, 3):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
-                        self.state = 86
+                        self.state = 102
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
                         if not(_la==CodeParser.PLUS or _la==CodeParser.MINUS):
@@ -695,14 +827,14 @@ class CodeParser ( Parser ):
                         else:
                             self._errHandler.reportMatch(self)
                             self.consume()
-                        self.state = 87
+                        self.state = 103
                         self.expression(4)
                         pass
 
              
-                self.state = 92
+                self.state = 108
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,9,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,11,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -743,19 +875,19 @@ class CodeParser ( Parser ):
     def atom(self):
 
         localctx = CodeParser.AtomContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 12, self.RULE_atom)
+        self.enterRule(localctx, 16, self.RULE_atom)
         try:
-            self.state = 95
+            self.state = 111
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [CodeParser.Constant]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 93
+                self.state = 109
                 localctx.op = self.match(CodeParser.Constant)
                 pass
             elif token in [CodeParser.ID]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 94
+                self.state = 110
                 localctx.op = self.match(CodeParser.ID)
                 pass
             else:
@@ -794,13 +926,57 @@ class CodeParser ( Parser ):
     def assignmentType(self):
 
         localctx = CodeParser.AssignmentTypeContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 14, self.RULE_assignmentType)
+        self.enterRule(localctx, 18, self.RULE_assignmentType)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 97
+            self.state = 113
             _la = self._input.LA(1)
-            if not(_la==CodeParser.T__4 or _la==CodeParser.T__5):
+            if not(_la==CodeParser.T__5 or _la==CodeParser.T__6):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class TypeContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+
+        def getRuleIndex(self):
+            return CodeParser.RULE_type
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterType" ):
+                listener.enterType(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitType" ):
+                listener.exitType(self)
+
+
+
+
+    def type(self):
+
+        localctx = CodeParser.TypeContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 20, self.RULE_type)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 115
+            _la = self._input.LA(1)
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CodeParser.T__7) | (1 << CodeParser.T__8) | (1 << CodeParser.T__9) | (1 << CodeParser.T__10))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -818,8 +994,8 @@ class CodeParser ( Parser ):
     def sempred(self, localctx:RuleContext, ruleIndex:int, predIndex:int):
         if self._predicates == None:
             self._predicates = dict()
-        self._predicates[4] = self.arguments_sempred
-        self._predicates[5] = self.expression_sempred
+        self._predicates[6] = self.arguments_sempred
+        self._predicates[7] = self.expression_sempred
         pred = self._predicates.get(ruleIndex, None)
         if pred is None:
             raise Exception("No predicate with index:" + str(ruleIndex))

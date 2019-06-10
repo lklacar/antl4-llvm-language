@@ -1,24 +1,31 @@
 grammar Code;
 
 program
-    : (functionDefinition)*
+    : moduleDefinition (functionDefinition)*
     ;
+
+moduleDefinition: 'module' ID SEMI;
 
 statement
     : assignmentStatement
     ;
 
 assignmentStatement
-    : assignmentType ID ':' TYPE EQ expression SEMI
+    : assignmentType ID ':' type EQ expression SEMI
     ;
 
 functionDefinition
-    : 'fn' ID LPAREN arguments? RPAREN ('->' TYPE)? LBRACKET (statement | expression)* RBRACKET
+    : 'fn' ID LPAREN arguments? RPAREN ('->' type)? LBRACKET functionBody? RBRACKET
+    ;
+
+functionBody
+    : (statement | expression)+
+    |
     ;
 
 arguments
-    :   ID ':' TYPE
-    |   arguments ',' ID ':' TYPE
+    :   ID ':' type
+    |   arguments ',' ID ':' type
     ;
 
 expression
@@ -38,12 +45,11 @@ assignmentType
     | 'let'
     ;
 
-TYPE
+type
     : 'i32'
     | 'i16'
     | 'i8'
     | 'double'
-    | 'bool'
     ;
 
 ID: [a-zA-Z_]+ DIGIT*;
