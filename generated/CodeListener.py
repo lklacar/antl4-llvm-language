@@ -1,4 +1,4 @@
-# Generated from /home/luka/Projects/antl4-llvm-language-rewrite/Code.g4 by ANTLR 4.7.2
+# Generated from /home/luka/Projects/antl4-llvm-language/Code.g4 by ANTLR 4.7.2
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .CodeParser import CodeParser
