@@ -1,6 +1,5 @@
 from llvmlite import ir
 
-from compiler.walker import arguments_walker
 from generated.CodeListener import CodeListener
 from generated.CodeParser import CodeParser
 
@@ -15,10 +14,12 @@ class ExpressionListener(CodeListener):
         function_name = ctx.functionCall().ID().getText()
         function = self.builder.module.get_global(function_name)
 
-        arguments_listener = arguments_walker.walk(ctx.functionCall().arguments(), self.builder, function)
-        arguments = arguments_listener.result
+        args = []
+        for _ in function.args:
+            args.append(self.stack.pop())
 
-        self.builder.call(function, reversed(arguments), function_name)
+        call = self.builder.call(function, args, function_name)
+        self.stack.append(call)
 
     def exitExpressionAdd(self, ctx: CodeParser.ExpressionAddContext):
         left = self.stack.pop()

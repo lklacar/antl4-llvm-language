@@ -36,5 +36,6 @@ def main(argv):
 
     generate_object_file(printer.module)
 
+
 if __name__ == '__main__':
     main(sys.argv)

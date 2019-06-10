@@ -22,6 +22,6 @@ class StatementListener(CodeListener):
         self.builder.function.context.add_variable(name, expression_result)
 
     def enterReturnStatement(self, ctx: CodeParser.ReturnStatementContext):
-        return_type = self.builder.function.type
+        return_type = self.builder.function.return_value.type
         expression_result = expression_walker.walk(ctx.expression(), self.builder, return_type).stack.pop()
         self.builder.ret(expression_result)

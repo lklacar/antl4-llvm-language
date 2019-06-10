@@ -1,21 +1,10 @@
-
 module Example;
 
-fn add(a:i32, b: i32) -> i32 {
-    const c: i32 = 3;
-    ret a - b;
+fn add(a: i32, b:i32) -> i32 {
+    ret a+b;
 }
 
-/*
-fn main(argc:i8, a: i32) -> i32 {
+fn main(a: i32) -> i32 {
 
-    const a : double = 5;
-
-    const b : double = a + 1;
-
-    const c : i8 = argc;
-
-    const d : i32 = main(1,2);
-
+    ret printint(add(1,2));
 }
-*/
