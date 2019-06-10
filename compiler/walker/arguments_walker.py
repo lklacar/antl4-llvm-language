@@ -1,11 +1,12 @@
 from antlr4 import ParseTreeWalker
 from llvmlite import ir
 
+from compiler.function import Function
 from compiler.listener.ArgumentsListener import ArgumentsListener
 from generated.CodeParser import CodeParser
 
 
-def walk(ctx: CodeParser.ArgumentsContext, builder: ir.IRBuilder, callee_function: ir.Function):
+def walk(ctx: CodeParser.ArgumentsContext, builder: ir.IRBuilder, callee_function: Function):
     listener = ArgumentsListener(builder, callee_function)
     walker = ParseTreeWalker()
     walker.walk(listener, ctx)

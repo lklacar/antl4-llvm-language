@@ -8,10 +8,15 @@ moduleDefinition: 'module' ID SEMI;
 
 statement
     : assignmentStatement
+    | returnStatement
     ;
 
 assignmentStatement
     : assignmentType ID ':' type EQ expression SEMI
+    ;
+
+returnStatement
+    : 'ret' expression SEMI
     ;
 
 functionDefinition

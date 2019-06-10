@@ -19,4 +19,9 @@ class StatementListener(CodeListener):
         pointer = self.builder.alloca(t, 1, name=name)
         self.builder.store(expression_result, pointer)
 
-        self.builder.function.metadata[name] = expression_result
+        self.builder.function.context.add_variable(name, expression_result)
+
+    def enterReturnStatement(self, ctx: CodeParser.ReturnStatementContext):
+        return_type = self.builder.function.type
+        expression_result = expression_walker.walk(ctx.expression(), self.builder, return_type).stack.pop()
+        self.builder.ret(expression_result)

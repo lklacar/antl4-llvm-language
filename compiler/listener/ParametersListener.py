@@ -11,4 +11,4 @@ class ParametersListener(CodeListener):
 
     def enterParameters(self, ctx: CodeParser.ParametersContext):
         for i, arg in enumerate(self.builder.function.args):
-            self.builder.function.metadata[self.parameter_names[i]] = arg
+            self.builder.function.context.add_variable(self.parameter_names[i], arg)

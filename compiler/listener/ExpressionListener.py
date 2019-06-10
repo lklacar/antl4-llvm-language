@@ -36,6 +36,6 @@ class ExpressionListener(CodeListener):
         if val.isnumeric():
             res = t(val)
         else:
-            res = self.builder.function.metadata[val]
+            res = self.builder.function.context.get_variable(val)
 
         self.stack.append(res)

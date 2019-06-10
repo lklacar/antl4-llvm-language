@@ -1,12 +1,13 @@
 from llvmlite import ir
 
+from compiler.function import Function
 from compiler.walker import expression_walker
 from generated.CodeListener import CodeListener
 from generated.CodeParser import CodeParser
 
 
 class ArgumentsListener(CodeListener):
-    def __init__(self, builder: ir.IRBuilder, callee_function: ir.Function):
+    def __init__(self, builder: ir.IRBuilder, callee_function: Function):
         self.arguments = []
         self.builder = builder
         self.callee_function = callee_function

@@ -44,6 +44,15 @@ class CodeListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CodeParser#returnStatement.
+    def enterReturnStatement(self, ctx:CodeParser.ReturnStatementContext):
+        pass
+
+    # Exit a parse tree produced by CodeParser#returnStatement.
+    def exitReturnStatement(self, ctx:CodeParser.ReturnStatementContext):
+        pass
+
+
     # Enter a parse tree produced by CodeParser#functionDefinition.
     def enterFunctionDefinition(self, ctx:CodeParser.FunctionDefinitionContext):
         pass
