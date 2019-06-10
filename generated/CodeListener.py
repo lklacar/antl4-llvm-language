@@ -62,12 +62,12 @@ class CodeListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CodeParser#arguments.
-    def enterArguments(self, ctx:CodeParser.ArgumentsContext):
+    # Enter a parse tree produced by CodeParser#parameters.
+    def enterParameters(self, ctx:CodeParser.ParametersContext):
         pass
 
-    # Exit a parse tree produced by CodeParser#arguments.
-    def exitArguments(self, ctx:CodeParser.ArgumentsContext):
+    # Exit a parse tree produced by CodeParser#parameters.
+    def exitParameters(self, ctx:CodeParser.ParametersContext):
         pass
 
 

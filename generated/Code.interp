@@ -63,7 +63,7 @@ statement
 assignmentStatement
 functionDefinition
 functionBody
-arguments
+parameters
 expression
 atom
 assignmentType

@@ -76,14 +76,14 @@ class CodeParser ( Parser ):
     RULE_assignmentStatement = 3
     RULE_functionDefinition = 4
     RULE_functionBody = 5
-    RULE_arguments = 6
+    RULE_parameters = 6
     RULE_expression = 7
     RULE_atom = 8
     RULE_assignmentType = 9
     RULE_type = 10
 
     ruleNames =  [ "program", "moduleDefinition", "statement", "assignmentStatement", 
-                   "functionDefinition", "functionBody", "arguments", "expression", 
+                   "functionDefinition", "functionBody", "parameters", "expression", 
                    "atom", "assignmentType", "type" ]
 
     EOF = Token.EOF
@@ -365,8 +365,8 @@ class CodeParser ( Parser ):
         def RBRACKET(self):
             return self.getToken(CodeParser.RBRACKET, 0)
 
-        def arguments(self):
-            return self.getTypedRuleContext(CodeParser.ArgumentsContext,0)
+        def parameters(self):
+            return self.getTypedRuleContext(CodeParser.ParametersContext,0)
 
 
         def type(self):
@@ -405,7 +405,7 @@ class CodeParser ( Parser ):
             _la = self._input.LA(1)
             if _la==CodeParser.ID:
                 self.state = 46
-                self.arguments(0)
+                self.parameters(0)
 
 
             self.state = 49
@@ -519,7 +519,7 @@ class CodeParser ( Parser ):
         return localctx
 
 
-    class ArgumentsContext(ParserRuleContext):
+    class ParametersContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -532,30 +532,30 @@ class CodeParser ( Parser ):
             return self.getTypedRuleContext(CodeParser.TypeContext,0)
 
 
-        def arguments(self):
-            return self.getTypedRuleContext(CodeParser.ArgumentsContext,0)
+        def parameters(self):
+            return self.getTypedRuleContext(CodeParser.ParametersContext,0)
 
 
         def getRuleIndex(self):
-            return CodeParser.RULE_arguments
+            return CodeParser.RULE_parameters
 
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterArguments" ):
-                listener.enterArguments(self)
+            if hasattr( listener, "enterParameters" ):
+                listener.enterParameters(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitArguments" ):
-                listener.exitArguments(self)
+            if hasattr( listener, "exitParameters" ):
+                listener.exitParameters(self)
 
 
 
-    def arguments(self, _p:int=0):
+    def parameters(self, _p:int=0):
         _parentctx = self._ctx
         _parentState = self.state
-        localctx = CodeParser.ArgumentsContext(self, self._ctx, _parentState)
+        localctx = CodeParser.ParametersContext(self, self._ctx, _parentState)
         _prevctx = localctx
         _startState = 12
-        self.enterRecursionRule(localctx, 12, self.RULE_arguments, _p)
+        self.enterRecursionRule(localctx, 12, self.RULE_parameters, _p)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 69
@@ -573,8 +573,8 @@ class CodeParser ( Parser ):
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    localctx = CodeParser.ArgumentsContext(self, _parentctx, _parentState)
-                    self.pushNewRecursionContext(localctx, _startState, self.RULE_arguments)
+                    localctx = CodeParser.ParametersContext(self, _parentctx, _parentState)
+                    self.pushNewRecursionContext(localctx, _startState, self.RULE_parameters)
                     self.state = 73
                     if not self.precpred(self._ctx, 1):
                         from antlr4.error.Errors import FailedPredicateException
@@ -985,7 +985,7 @@ class CodeParser ( Parser ):
     def sempred(self, localctx:RuleContext, ruleIndex:int, predIndex:int):
         if self._predicates == None:
             self._predicates = dict()
-        self._predicates[6] = self.arguments_sempred
+        self._predicates[6] = self.parameters_sempred
         self._predicates[7] = self.expression_sempred
         pred = self._predicates.get(ruleIndex, None)
         if pred is None:
@@ -993,7 +993,7 @@ class CodeParser ( Parser ):
         else:
             return pred(localctx, predIndex)
 
-    def arguments_sempred(self, localctx:ArgumentsContext, predIndex:int):
+    def parameters_sempred(self, localctx:ParametersContext, predIndex:int):
             if predIndex == 0:
                 return self.precpred(self._ctx, 1)
          

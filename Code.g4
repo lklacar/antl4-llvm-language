@@ -15,7 +15,7 @@ assignmentStatement
     ;
 
 functionDefinition
-    : 'fn' ID LPAREN arguments? RPAREN ('->' type)? LBRACKET functionBody RBRACKET
+    : 'fn' ID LPAREN parameters? RPAREN ('->' type)? LBRACKET functionBody RBRACKET
     ;
 
 functionBody
@@ -23,10 +23,11 @@ functionBody
     |
     ;
 
-arguments
+parameters
     :   ID ':' type
-    |   arguments ',' ID ':' type
+    |   parameters ',' ID ':' type
     ;
+
 
 expression
    : expression op=(MUL | DIV)  expression   #expressionMul
