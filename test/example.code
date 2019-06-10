@@ -1,20 +1,8 @@
 
-int fibbonacci(int n) {
-   if(n == 0){
-      return 0
-   }
 
-   if(n == 1) {
-      return 1
-   }
 
-    return fibbonacci(n-1) + fibbonacci(n-2)
-}
+fn main(argc:i8) -> i32 {
 
-int main() {
-    int res = fibbonacci(10)
+    const a : i32 = 5;
 
-    int pres = printint(res)
-
-    return pres
 }

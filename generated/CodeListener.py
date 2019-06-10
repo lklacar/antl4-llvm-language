@@ -1,4 +1,4 @@
-# Generated from /home/luka/Projects/antl4-llvm-language/Code.g4 by ANTLR 4.7.2
+# Generated from /home/luka/Projects/antl4-llvm-language-rewrite/Code.g4 by ANTLR 4.7.2
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .CodeParser import CodeParser
@@ -17,66 +17,12 @@ class CodeListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CodeParser#function.
-    def enterFunction(self, ctx:CodeParser.FunctionContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#function.
-    def exitFunction(self, ctx:CodeParser.FunctionContext):
-        pass
-
-
-    # Enter a parse tree produced by CodeParser#functionHead.
-    def enterFunctionHead(self, ctx:CodeParser.FunctionHeadContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#functionHead.
-    def exitFunctionHead(self, ctx:CodeParser.FunctionHeadContext):
-        pass
-
-
-    # Enter a parse tree produced by CodeParser#arg.
-    def enterArg(self, ctx:CodeParser.ArgContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#arg.
-    def exitArg(self, ctx:CodeParser.ArgContext):
-        pass
-
-
-    # Enter a parse tree produced by CodeParser#arguments.
-    def enterArguments(self, ctx:CodeParser.ArgumentsContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#arguments.
-    def exitArguments(self, ctx:CodeParser.ArgumentsContext):
-        pass
-
-
-    # Enter a parse tree produced by CodeParser#functionBody.
-    def enterFunctionBody(self, ctx:CodeParser.FunctionBodyContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#functionBody.
-    def exitFunctionBody(self, ctx:CodeParser.FunctionBodyContext):
-        pass
-
-
     # Enter a parse tree produced by CodeParser#statement.
     def enterStatement(self, ctx:CodeParser.StatementContext):
         pass
 
     # Exit a parse tree produced by CodeParser#statement.
     def exitStatement(self, ctx:CodeParser.StatementContext):
-        pass
-
-
-    # Enter a parse tree produced by CodeParser#returnStatement.
-    def enterReturnStatement(self, ctx:CodeParser.ReturnStatementContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#returnStatement.
-    def exitReturnStatement(self, ctx:CodeParser.ReturnStatementContext):
         pass
 
 
@@ -89,12 +35,21 @@ class CodeListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CodeParser#ifStatement.
-    def enterIfStatement(self, ctx:CodeParser.IfStatementContext):
+    # Enter a parse tree produced by CodeParser#functionDefinition.
+    def enterFunctionDefinition(self, ctx:CodeParser.FunctionDefinitionContext):
         pass
 
-    # Exit a parse tree produced by CodeParser#ifStatement.
-    def exitIfStatement(self, ctx:CodeParser.IfStatementContext):
+    # Exit a parse tree produced by CodeParser#functionDefinition.
+    def exitFunctionDefinition(self, ctx:CodeParser.FunctionDefinitionContext):
+        pass
+
+
+    # Enter a parse tree produced by CodeParser#arguments.
+    def enterArguments(self, ctx:CodeParser.ArgumentsContext):
+        pass
+
+    # Exit a parse tree produced by CodeParser#arguments.
+    def exitArguments(self, ctx:CodeParser.ArgumentsContext):
         pass
 
 
@@ -125,75 +80,12 @@ class CodeListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CodeParser#expressionFunctionCall.
-    def enterExpressionFunctionCall(self, ctx:CodeParser.ExpressionFunctionCallContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#expressionFunctionCall.
-    def exitExpressionFunctionCall(self, ctx:CodeParser.ExpressionFunctionCallContext):
-        pass
-
-
     # Enter a parse tree produced by CodeParser#expressionNested.
     def enterExpressionNested(self, ctx:CodeParser.ExpressionNestedContext):
         pass
 
     # Exit a parse tree produced by CodeParser#expressionNested.
     def exitExpressionNested(self, ctx:CodeParser.ExpressionNestedContext):
-        pass
-
-
-    # Enter a parse tree produced by CodeParser#expressionPow.
-    def enterExpressionPow(self, ctx:CodeParser.ExpressionPowContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#expressionPow.
-    def exitExpressionPow(self, ctx:CodeParser.ExpressionPowContext):
-        pass
-
-
-    # Enter a parse tree produced by CodeParser#equation.
-    def enterEquation(self, ctx:CodeParser.EquationContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#equation.
-    def exitEquation(self, ctx:CodeParser.EquationContext):
-        pass
-
-
-    # Enter a parse tree produced by CodeParser#relop.
-    def enterRelop(self, ctx:CodeParser.RelopContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#relop.
-    def exitRelop(self, ctx:CodeParser.RelopContext):
-        pass
-
-
-    # Enter a parse tree produced by CodeParser#param.
-    def enterParam(self, ctx:CodeParser.ParamContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#param.
-    def exitParam(self, ctx:CodeParser.ParamContext):
-        pass
-
-
-    # Enter a parse tree produced by CodeParser#params.
-    def enterParams(self, ctx:CodeParser.ParamsContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#params.
-    def exitParams(self, ctx:CodeParser.ParamsContext):
-        pass
-
-
-    # Enter a parse tree produced by CodeParser#functionCall.
-    def enterFunctionCall(self, ctx:CodeParser.FunctionCallContext):
-        pass
-
-    # Exit a parse tree produced by CodeParser#functionCall.
-    def exitFunctionCall(self, ctx:CodeParser.FunctionCallContext):
         pass
 
 
@@ -206,12 +98,12 @@ class CodeListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CodeParser#type.
-    def enterType(self, ctx:CodeParser.TypeContext):
+    # Enter a parse tree produced by CodeParser#assignmentType.
+    def enterAssignmentType(self, ctx:CodeParser.AssignmentTypeContext):
         pass
 
-    # Exit a parse tree produced by CodeParser#type.
-    def exitType(self, ctx:CodeParser.TypeContext):
+    # Exit a parse tree produced by CodeParser#assignmentType.
+    def exitAssignmentType(self, ctx:CodeParser.AssignmentTypeContext):
         pass
 
 
