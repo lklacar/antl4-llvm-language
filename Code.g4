@@ -28,9 +28,18 @@ parameters
     |   parameters ',' ID ':' type
     ;
 
+arguments
+    :   expression
+    |   arguments ',' expression
+    ;
+
+functionCall
+    :   ID LPAREN arguments RPAREN
+    ;
 
 expression
-   : expression op=(MUL | DIV)  expression   #expressionMul
+   : functionCall                            #expressionFunctionCall
+   | expression op=(MUL | DIV)  expression   #expressionMul
    | expression op=(PLUS | MINUS) expression #expressionAdd
    | LPAREN expression RPAREN                #expressionNested
    | (PLUS | MINUS)* atom                    #expressionNumber

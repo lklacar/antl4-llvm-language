@@ -1,12 +1,15 @@
 
 module Example;
 
-fn main(argc:i8, a:i8) -> i32 {
+
+fn main(argc:i8, a: i32) -> i32 {
 
     const a : double = 5;
 
     const b : double = a + 1;
 
     const c : i8 = argc;
+
+    const d : i32 = main(1,2);
 
 }

@@ -71,6 +71,24 @@ class CodeListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CodeParser#arguments.
+    def enterArguments(self, ctx:CodeParser.ArgumentsContext):
+        pass
+
+    # Exit a parse tree produced by CodeParser#arguments.
+    def exitArguments(self, ctx:CodeParser.ArgumentsContext):
+        pass
+
+
+    # Enter a parse tree produced by CodeParser#functionCall.
+    def enterFunctionCall(self, ctx:CodeParser.FunctionCallContext):
+        pass
+
+    # Exit a parse tree produced by CodeParser#functionCall.
+    def exitFunctionCall(self, ctx:CodeParser.FunctionCallContext):
+        pass
+
+
     # Enter a parse tree produced by CodeParser#expressionAdd.
     def enterExpressionAdd(self, ctx:CodeParser.ExpressionAddContext):
         pass
@@ -95,6 +113,15 @@ class CodeListener(ParseTreeListener):
 
     # Exit a parse tree produced by CodeParser#expressionNumber.
     def exitExpressionNumber(self, ctx:CodeParser.ExpressionNumberContext):
+        pass
+
+
+    # Enter a parse tree produced by CodeParser#expressionFunctionCall.
+    def enterExpressionFunctionCall(self, ctx:CodeParser.ExpressionFunctionCallContext):
+        pass
+
+    # Exit a parse tree produced by CodeParser#expressionFunctionCall.
+    def exitExpressionFunctionCall(self, ctx:CodeParser.ExpressionFunctionCallContext):
         pass
 
 
