@@ -15,11 +15,11 @@ assignmentStatement
     ;
 
 functionDefinition
-    : 'fn' ID LPAREN arguments? RPAREN ('->' type)? LBRACKET functionBody? RBRACKET
+    : 'fn' ID LPAREN arguments? RPAREN ('->' type)? LBRACKET functionBody RBRACKET
     ;
 
 functionBody
-    : (statement | expression)+
+    : (statement | expression)*
     |
     ;
 

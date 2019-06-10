@@ -1,5 +1,5 @@
 from compiler import util
-from compiler.types import map_type
+from compiler.types import get_llvm_type_by_context
 from compiler.util import function_util
 from compiler.walker import arguments_walker, function_body_walker
 from generated.CodeListener import CodeListener
@@ -15,7 +15,7 @@ class FunctionDefinitionListener(CodeListener):
         argument_types = arguments_walker.walk(ctx.arguments()).argument_types
 
         self.builder = function_util.create(self.module, ctx.ID().getText(),
-                                            map_type(ctx.type()),
+                                            get_llvm_type_by_context(ctx.type()),
                                             argument_types)
 
     def enterFunctionBody(self, ctx: CodeParser.FunctionBodyContext):

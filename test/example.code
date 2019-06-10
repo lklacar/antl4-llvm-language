@@ -3,6 +3,10 @@ module Example;
 
 fn main(argc:i8, a:i8) -> i32 {
 
-    const a : i32 = 5;
+    const a : double = 5;
+
+    const b : double = a + 1;
+
+    const c : i8 = argc;
 
 }
