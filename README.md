@@ -36,12 +36,11 @@ objdump -d ./out/evaluate.o
 ## Example language syntax
 
 ```c
-
 int fibbonacci(int n) {
    if(n == 0) {
       return 0
    }
-   
+
    if(n == 1) {
       return 1
    }
@@ -49,8 +48,12 @@ int fibbonacci(int n) {
     return fibbonacci(n-1) + fibbonacci(n-2)
 }
 
-int start() {
-    return fibbonacci(10)
+int main() {
+    int res = fibbonacci(10)
+
+    int pres = printint(res)
+
+    return 0
 }
 ```
 
